@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Ultra IPTV Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise-layer" aria-hidden="true"></div>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <header class="brand-card">
+          <p class="eyebrow">Ultra IPTV</p>
+          <h1>واجهة أنيقة لتشغيل قوائم M3U</h1>
+          <p class="muted">
+            حمل أي ملف أو رابط M3U وشاهد القنوات في تجربة حديثة ومحسّنة.
+          </p>
+        </header>
+
+        <section class="panel loader-card">
+          <h2>تحميل قائمة</h2>
+          <label class="field-label" for="playlistUrl">رابط M3U</label>
+          <div class="field-row">
+            <input
+              type="url"
+              id="playlistUrl"
+              placeholder="https://example.com/list.m3u"
+              autocomplete="off"
+            />
+            <button id="loadUrlBtn" class="action">تشغيل</button>
+          </div>
+
+          <div class="divider" role="separator"><span>أو</span></div>
+
+          <label class="file-drop" for="playlistFile">
+            <input
+              type="file"
+              id="playlistFile"
+              accept=".m3u,.m3u8"
+              hidden
+            />
+            <strong>اسحب ملف M3U أو انقر للاختيار</strong>
+            <span>يدعم ملفات IPTV الكاملة أو المقتطفة</span>
+          </label>
+
+          <div class="quick-demos">
+            <button class="ghost" data-sample="streams/us.m3u">
+              عرض قائمة تجريبية (USA)
+            </button>
+            <button class="ghost" data-sample="streams/by-category.m3u">
+              قنوات حسب الفئة
+            </button>
+          </div>
+        </section>
+
+        <section class="panel filters-card hidden" id="filtersCard">
+          <h2>التصفية والبحث</h2>
+          <div class="filter-grid">
+            <label>
+              <span class="field-label">بحث سريع</span>
+              <input
+                type="search"
+                id="searchInput"
+                placeholder="ابحث عن قناة، دولة أو نوع"
+              />
+            </label>
+
+            <label>
+              <span class="field-label">المجموعة</span>
+              <select id="groupSelect">
+                <option value="">كل المجموعات</option>
+              </select>
+            </label>
+
+            <label>
+              <span class="field-label">الترتيب</span>
+              <select id="sortSelect">
+                <option value="name">الاسم (أ→ي)</option>
+                <option value="country">الدولة</option>
+                <option value="quality">الجودة</option>
+              </select>
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" id="favoritesOnly" />
+              <span>المفضلة فقط</span>
+            </label>
+          </div>
+        </section>
+
+        <section class="panel list-card">
+          <header class="panel-header">
+            <div>
+              <h2>القنوات</h2>
+              <p id="resultCount" class="muted">لم يتم تحميل قائمة بعد</p>
+            </div>
+            <button class="ghost" id="clearPlaylist" hidden>
+              مسح القائمة
+            </button>
+          </header>
+          <ul id="channelList" class="channel-list"></ul>
+        </section>
+      </aside>
+
+      <main class="player-area">
+        <div class="player-card">
+          <div class="player-frame">
+            <video
+              id="videoPlayer"
+              controls
+              playsinline
+              poster=""
+              preload="none"
+            >
+              <p>
+                متصفحك لا يدعم تشغيل الفيديو، جرّب تحديثه أو استخدام متصفح آخر.
+              </p>
+            </video>
+          </div>
+          <div class="now-playing" id="nowPlaying">
+            <div>
+              <p class="eyebrow">القناة الحالية</p>
+              <h3 id="currentTitle">لم يتم اختيار قناة</h3>
+              <p id="currentMeta" class="muted">
+                قم بتحميل قائمة M3U من أجل البدء.
+              </p>
+            </div>
+            <div class="tag-row" id="currentTags"></div>
+          </div>
+        </div>
+
+        <section class="panel tips-card">
+          <h2>نصائح سريعة</h2>
+          <ul>
+            <li>انقر مرتين على قناة لفتحها في تبويب خارجي.</li>
+            <li>اضغط على رمز ★ لإضافة القنوات إلى المفضلة.</li>
+            <li>يتم حفظ اختياراتك محلياً لتعود بسرعة المرة القادمة.</li>
+          </ul>
+        </section>
+
+        <div class="status-bar" id="statusBar" role="status">
+          جاهز للبدء ✔
+        </div>
+      </main>
+    </div>
+
+    <template id="channelTemplate">
+      <li class="channel-card">
+        <button class="fav-btn" title="إضافة للمفضلة" aria-pressed="false">
+          ★
+        </button>
+        <div class="avatar" data-logo=""></div>
+        <div class="card-body">
+          <div class="title-row">
+            <h4></h4>
+            <small class="quality"></small>
+          </div>
+          <p class="meta"></p>
+          <div class="tag-row"></div>
+        </div>
+      </li>
+    </template>
+    <script
+      src="https://cdn.jsdelivr.net/npm/hls.js@1.5.9/dist/hls.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
