@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="UltraCinema" tvg-logo="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=200&q=80" group-title="سينما",Ultra Cinema 4K
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+#EXTINF:-1 tvg-id="IndieDreams" tvg-logo="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=200&q=80" group-title="سينما",Indie Dreams HD
+https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8
+#EXTINF:-1 tvg-id="UltraDrama" tvg-logo="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?auto=format&fit=crop&w=200&q=80" group-title="سينما",Ultra Drama Live
+https://storage.googleapis.com/shaka-demo-assets/angel-one-hls/hls.m3u8

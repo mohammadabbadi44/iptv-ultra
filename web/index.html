@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -19,7 +19,8 @@
           <p class="eyebrow">Ultra IPTV</p>
           <h1>واجهة أنيقة لتشغيل قوائم M3U</h1>
           <p class="muted">
-            حمل أي ملف أو رابط M3U وشاهد القنوات في تجربة حديثة ومحسّنة.
+            حمّل أي ملف أو رابط وشاهد قنواتك بواجهة مرتبة، فلترة سريعة، ولائحة
+            مفضلة تُحفظ تلقائياً.
           </p>
         </header>
 
@@ -46,15 +47,15 @@
               hidden
             />
             <strong>اسحب ملف M3U أو انقر للاختيار</strong>
-            <span>يدعم ملفات IPTV الكاملة أو المقتطفة</span>
+            <span>يدعم قوائم IPTV الطويلة أو المختصرة</span>
           </label>
 
           <div class="quick-demos">
-            <button class="ghost" data-sample="streams/us.m3u">
-              عرض قائمة تجريبية (USA)
+            <button class="ghost" data-sample="samples/cinema.m3u">
+              سينما بلمسة واحدة
             </button>
-            <button class="ghost" data-sample="streams/by-category.m3u">
-              قنوات حسب الفئة
+            <button class="ghost" data-sample="samples/world.m3u">
+              قنوات عالمية منسّقة
             </button>
           </div>
         </section>
@@ -109,6 +110,38 @@
       </aside>
 
       <main class="player-area">
+        <section class="panel hero-card">
+          <div class="hero-content">
+            <p class="eyebrow">عرض اليوم</p>
+            <h2>صور سينمائية وصوت محيطي في بث مباشر</h2>
+            <p>
+              جرّب مجموعات جاهزة للأفلام والبرامج أو حمّل قوائمك الخاصة. يدعم
+              المشغل HLS وملفات M3U القياسية ويحفظ مفضلاتك محلياً.
+            </p>
+            <div class="hero-actions">
+              <button class="action" data-sample="samples/cinema.m3u">
+                تشغيل عرض السينما
+              </button>
+              <button class="ghost" data-scroll="featured">
+                اكتشف العناوين المصورة
+              </button>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true"></div>
+        </section>
+
+        <section class="panel featured-card" id="featured">
+          <header class="panel-header">
+            <div>
+              <h2>عناوين مميزة</h2>
+              <p class="muted">
+                صور عالية الدقة مع روابط جاهزة للتشغيل الفوري.
+              </p>
+            </div>
+          </header>
+          <div class="featured-grid" id="featuredList"></div>
+        </section>
+
         <div class="player-card">
           <div class="player-frame">
             <video
@@ -140,7 +173,9 @@
           <ul>
             <li>انقر مرتين على قناة لفتحها في تبويب خارجي.</li>
             <li>اضغط على رمز ★ لإضافة القنوات إلى المفضلة.</li>
-            <li>يتم حفظ اختياراتك محلياً لتعود بسرعة المرة القادمة.</li>
+            <li>
+              استخدم أزرار العرض الجاهز لتحميل قوائم منسّقة وجاهزة للبث.
+            </li>
           </ul>
         </section>
 

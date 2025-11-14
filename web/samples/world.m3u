@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="TravelNow" tvg-logo="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=200&q=80" group-title="سفر",Travel Now 24/7
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
+#EXTINF:-1 tvg-id="CityPulse" tvg-logo="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=200&q=80" group-title="مدن",City Pulse Live
+https://mn-nl.mncdn.com/blendtv/blendtv.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="ChillBeats" tvg-logo="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=200&q=80" group-title="موسيقى",Chill Beats Global
+https://test-streams.mux.dev/1.m3u8

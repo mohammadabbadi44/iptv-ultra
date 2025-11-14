@@ -1,5 +1,35 @@
 const storageKey = "ultra-iptv-favorites";
 
+const featuredReels = [
+  {
+    title: "ليلة سينما 4K",
+    description: "مزيج من الحركة والخيال العلمي مع صوت محيطي وصورة نقية.",
+    tags: ["سينما", "4K", "HDR"],
+    duration: "3 قنوات متجددة",
+    poster: "https://images.unsplash.com/photo-1505682634904-d7c58698168d?auto=format&fit=crop&w=900&q=80",
+    url: "samples/cinema.m3u",
+    badge: "خيار المحرر",
+  },
+  {
+    title: "رحلات حول العالم",
+    description: "قنوات سياحة وطبيعة تنقلك من الجزر الدافئة إلى المدن الفائقة الحداثة.",
+    tags: ["سفر", "وثائقي", "HD"],
+    duration: "بث مباشر 24/7",
+    poster: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
+    url: "samples/world.m3u",
+    badge: "سرد بصري",
+  },
+  {
+    title: "عالم الموسيقى",
+    description: "حفلات مباشرة ولقطات من كواليس الفنانين مع جودة صوت عالية.",
+    tags: ["موسيقى", "Live"],
+    duration: "تحديث كل أسبوع",
+    poster: "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80",
+    url: "samples/world.m3u",
+    badge: "جديد",
+  },
+];
+
 const elements = {
   list: document.getElementById("channelList"),
   resultCount: document.getElementById("resultCount"),
@@ -18,6 +48,7 @@ const elements = {
   nowTags: document.getElementById("currentTags"),
   status: document.getElementById("statusBar"),
   template: document.getElementById("channelTemplate"),
+  featuredList: document.getElementById("featuredList"),
 };
 
 const state = {
@@ -29,20 +60,12 @@ const state = {
   hls: null,
 };
 
-document.querySelectorAll("[data-sample]").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const samplePath = btn.getAttribute("data-sample");
-    if (!samplePath) {
-      return;
-    }
-    loadFromUrl(samplePath);
-  });
-});
+bindSampleButtons();
+bindSmoothScroll();
+renderFeatured();
 
 elements.loadUrlBtn?.addEventListener("click", () => {
-  if (!elements.urlInput) {
-    return;
-  }
+  if (!elements.urlInput) return;
   loadFromUrl(elements.urlInput.value.trim());
 });
 
@@ -75,6 +98,80 @@ elements.clearBtn?.addEventListener("click", () => {
   setStatus("تم مسح القائمة الحالية.", "idle");
   stopPlayback();
 });
+
+function bindSampleButtons() {
+  document.querySelectorAll("[data-sample]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const samplePath = btn.getAttribute("data-sample");
+      if (samplePath) {
+        loadFromUrl(samplePath);
+      }
+    });
+  });
+}
+
+function bindSmoothScroll() {
+  document.querySelectorAll("[data-scroll]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const targetId = btn.getAttribute("data-scroll");
+      if (!targetId) return;
+      document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+}
+
+function renderFeatured() {
+  if (!elements.featuredList) return;
+  elements.featuredList.innerHTML = "";
+  featuredReels.forEach((reel) => {
+    const card = document.createElement("article");
+    card.className = "featured-item";
+    card.style.setProperty("--poster", `url(${reel.poster})`);
+
+    const overlay = document.createElement("div");
+    overlay.className = "featured-overlay";
+
+    if (reel.badge) {
+      const badge = document.createElement("span");
+      badge.className = "badge";
+      badge.textContent = reel.badge;
+      overlay.appendChild(badge);
+    }
+
+    const title = document.createElement("h3");
+    title.textContent = reel.title;
+    overlay.appendChild(title);
+
+    const description = document.createElement("p");
+    description.textContent = reel.description;
+    overlay.appendChild(description);
+
+    const tagsWrap = document.createElement("div");
+    tagsWrap.className = "tag-row";
+    (reel.tags || []).forEach((tag) => {
+      const span = document.createElement("span");
+      span.className = "tag";
+      span.textContent = tag;
+      tagsWrap.appendChild(span);
+    });
+    overlay.appendChild(tagsWrap);
+
+    const meta = document.createElement("div");
+    meta.className = "featured-meta";
+    meta.textContent = reel.duration;
+    overlay.appendChild(meta);
+
+    const action = document.createElement("button");
+    action.type = "button";
+    action.className = "ghost";
+    action.textContent = "تشغيل القائمة";
+    action.addEventListener("click", () => loadFromUrl(reel.url));
+    overlay.appendChild(action);
+
+    card.appendChild(overlay);
+    elements.featuredList.appendChild(card);
+  });
+}
 
 function loadFavorites() {
   try {
@@ -141,7 +238,7 @@ function handlePlaylistText(text) {
   buildGroupFilter();
   applyFilters();
   toggleFilters(true);
-  setStatus(`تم تحميل ${channels.length} قناة. استمتع!`, "idle");
+  setStatus(`تم تحميل ${channels.length} قناة. استمتع بالمشاهدة!`, "idle");
   elements.clearBtn?.removeAttribute("hidden");
 }
 
@@ -208,7 +305,7 @@ function buildGroupFilter() {
   groups.forEach((group) => {
     const option = document.createElement("option");
     option.value = group;
-    option.textContent = group;
+    option.textContent = `${group} (${state.channels.filter((channel) => channel.group === group).length})`;
     fragment.appendChild(option);
   });
 
@@ -225,7 +322,8 @@ function applyFilters() {
   let result = [...state.channels];
 
   if (selectedGroup) {
-    result = result.filter((channel) => channel.group === selectedGroup);
+    const groupName = selectedGroup.split("(")[0].trim();
+    result = result.filter((channel) => channel.group === groupName);
   }
 
   if (onlyFavorites) {
@@ -317,6 +415,7 @@ function renderList() {
       avatar.style.backgroundImage = "";
     }
 
+    tagsWrap.innerHTML = "";
     buildTags(channel).forEach((tag) => tagsWrap.appendChild(tag));
 
     const isFavorite = state.favorites.has(card.dataset.key);
@@ -455,7 +554,7 @@ function startPlayback(channel) {
   }
 
   elements.player.play().catch(() => {
-    setStatus("تم تحميل القناة لكن التشغيل التلقائي موقوف من المتصفح.", "error");
+    setStatus("تم تحميل القناة لكن المتصفح أوقف التشغيل التلقائي.", "error");
   });
 }
 
