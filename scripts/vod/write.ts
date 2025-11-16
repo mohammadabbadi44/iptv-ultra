@@ -13,3 +13,12 @@ fs.writeFileSync('streams/movies-arabic.m3u', toM3U(classified.moviesArabic, 'Ar
 fs.writeFileSync('streams/movies-foreign.m3u', toM3U(classified.moviesForeign, 'Foreign Movies', logo));
 fs.writeFileSync('streams/series-arabic.m3u', toM3U(classified.seriesArabic, 'Arabic Series', logo));
 fs.writeFileSync('streams/series-foreign.m3u', toM3U(classified.seriesForeign, 'Foreign Series', logo));
+
+// دمج كل النتائج في ملف واحد all.m3u
+const all = [
+  ...classified.moviesArabic,
+  ...classified.moviesForeign,
+  ...classified.seriesArabic,
+  ...classified.seriesForeign
+];
+fs.writeFileSync('streams/all.m3u', toM3U(all, 'All', logo));
