@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="Al Hayba" group-title="Arabic Series",Al Hayba (S1)
+http://example.com/arabic-series/alhayba-s1.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Bab Al Hara" group-title="Arabic Series",Bab Al Hara (S1)
+http://example.com/arabic-series/babalhara-s1.m3u8

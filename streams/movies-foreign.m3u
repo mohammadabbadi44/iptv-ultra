@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="Inception" group-title="Foreign Movies",Inception
+http://example.com/foreign-movies/inception.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="The Godfather" group-title="Foreign Movies",The Godfather
+http://example.com/foreign-movies/godfather.m3u8

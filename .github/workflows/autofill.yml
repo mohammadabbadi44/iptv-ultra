@@ -1,0 +1,36 @@
+name: Auto-Fill IPTV Playlists
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  autofill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: npm install
+      - name: Run Pipeline A (iptv-org)
+        run: npx tsx scripts/autofill/fetch-iptv-org.ts
+      - name: Run Pipeline B (multi-sources)
+        run: npx tsx scripts/autofill/fetch-multi-sources.ts
+      - name: Run Pipeline C (smart scraper)
+        run: npx tsx scripts/autofill/smart-scraper.ts
+      - name: Run Pipeline D (merge/optimize)
+        run: npx tsx scripts/autofill/merge-optimize.ts
+      - name: Generate Playlists
+        run: npm run playlist:generate
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add streams/*.m3u combined/all.m3u
+          git commit -m "AUTO-FILL: Updated movies/series playlists from all pipelines" || echo 'No changes to commit'
+          git push

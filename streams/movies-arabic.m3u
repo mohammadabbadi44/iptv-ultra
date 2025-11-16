@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="" tvg-name="The Blue Elephant" group-title="Arabic Movies",The Blue Elephant
+http://example.com/arabic-movies/blue-elephant.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Hepta" group-title="Arabic Movies",Hepta
+http://example.com/arabic-movies/hepta.m3u8
