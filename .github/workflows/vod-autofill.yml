@@ -1,0 +1,29 @@
+name: VOD Auto-Fill
+
+on:
+  schedule:
+    - cron: '0 * * * *' # every hour
+  workflow_dispatch:
+
+jobs:
+  vod-autofill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - run: npx tsc
+      - run: node dist/vod/scraper.js
+      - run: node dist/vod/classify.js
+      - run: node dist/vod/clean.js
+      - run: node dist/vod/write.js
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add streams/*.m3u
+          git commit -m "VOD Auto-Fill: Updated Arabic/Foreign Movies & Series" || exit 0
+          git push

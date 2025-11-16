@@ -1,7 +1,7 @@
 // Pipeline D: Merge + Optimize + Clean
 // Merges, dedupes, sorts, validates, and outputs final all-in-one M3U
 
-import fs from 'fs';
+import * as fs from 'fs';
 
 // Helper to get fetch (global or node-fetch)
 async function getFetch(): Promise<typeof fetch> {
@@ -10,17 +10,20 @@ async function getFetch(): Promise<typeof fetch> {
   return (await import('node-fetch')).default;
 }
 
-const INPUTS = [
-  'streams/movies.m3u',
-  'streams/movies-arabic.m3u',
-  'streams/movies-foreign.m3u',
-  'streams/series-arabic.m3u',
-  'streams/series-foreign.m3u',
+import * as path from 'path';
+import { glob } from 'glob';
+
+// Helper to get all .m3u files in streams/ except index.m3u and all.m3u (async for glob v11+)
+async function getAllM3Us(): Promise<string[]> {
+  const files = await glob('streams/*.m3u');
+  return files.filter(f => !/all\.m3u$|index\.m3u$/.test(f));
+}
+
+const INPUTS_EXTRA = [
   'streams/tmdb-movies.m3u',
   'streams/tmdb-series.m3u',
-  // يمكنك إضافة المزيد من القوائم هنا إذا أردت دمج قنوات أخرى
 ];
-const OUTPUT = 'index.m3u';
+const OUTPUT_PATH = path.resolve(__dirname, '../../index-unique-test-iptv-ultra.m3u');
 const LOGO_URL = 'https://raw.githubusercontent.com/mohammadabbadi44/iptv-ultra/master/.readme/preview.png';
 const TMDB_API_KEY = '1e8c1e0b8e7e3e5e7e8e7e8e7e8e7e8e'; // Demo key, replace with your own for production
 const TMDB_BASE = 'https://api.themoviedb.org/3/search/';
@@ -28,7 +31,6 @@ const TMDB_IMG = 'https://image.tmdb.org/t/p/w500';
 
 
 interface M3UEntry {
-  info: string;
   url?: string;
   id?: string;
   name?: string;
@@ -36,16 +38,42 @@ interface M3UEntry {
   logo?: string;
 }
 
-function parseM3U(m3u: string): M3UEntry[] {
+function parseM3U(m3u: string, sourceFile?: string): M3UEntry[] {
   const entries: M3UEntry[] = [];
-  let current: Partial<M3UEntry> = {};
+  let current: Partial<M3UEntry> = undefined;
+  // Determine default category from filename
+  let defaultCategory = '';
+  if (sourceFile) {
+    if (/movies-arabic/i.test(sourceFile)) defaultCategory = 'Arabic Movies';
+    else if (/movies-foreign/i.test(sourceFile)) defaultCategory = 'Foreign Movies';
+    else if (/series-arabic/i.test(sourceFile)) defaultCategory = 'Arabic Series';
+    else if (/series-foreign/i.test(sourceFile)) defaultCategory = 'Foreign Series';
+    else if (/movies/i.test(sourceFile)) defaultCategory = 'Movies';
+    else if (/series/i.test(sourceFile)) defaultCategory = 'Series';
+    else if (/channels|iptv|live/i.test(sourceFile)) defaultCategory = 'Channels';
+  }
+  if (!defaultCategory) defaultCategory = 'Other';
   for (const line of m3u.split(/\r?\n/)) {
     if (line.startsWith('#EXTINF:')) {
-      current = { info: line };
-    } else if (line && !line.startsWith('#')) {
+      // Extract fields from EXTINF
+      const nameMatch = line.match(/,(.*)$/);
+      const tvgIdMatch = line.match(/tvg-id="([^"]*)"/);
+      const tvgNameMatch = line.match(/tvg-name="([^"]*)"/);
+      const groupTitleMatch = line.match(/group-title="([^"]*)"/);
+      const logoMatch = line.match(/tvg-logo="([^"]*)"/);
+      let parsedCategory = groupTitleMatch ? groupTitleMatch[1].trim() : '';
+      // If parsedCategory is empty, use defaultCategory
+      if (!parsedCategory) parsedCategory = defaultCategory || 'Other';
+      current = {
+        name: tvgNameMatch ? tvgNameMatch[1].trim() : (nameMatch ? nameMatch[1].trim() : ''),
+        id: tvgIdMatch ? tvgIdMatch[1].trim() : '',
+        category: parsedCategory,
+        logo: logoMatch ? logoMatch[1].trim() : ''
+      };
+    } else if (current && line && !line.startsWith('#')) {
       current.url = line;
       entries.push(current as M3UEntry);
-      current = {};
+      current = undefined;
     }
   }
   return entries;
@@ -79,7 +107,21 @@ async function getPoster(name: string, type: 'movie' | 'tv'): Promise<string | n
 }
 
 async function extinf(channel: M3UEntry): Promise<string> {
-  let info = `#EXTINF:-1 tvg-id="${channel.id || ''}" tvg-name="${channel.name || ''}" group-title="${channel.category || ''}"`;
+  // Debug: print entry and category before processing
+  if ((global as any).extinfDebugCount === undefined) (global as any).extinfDebugCount = 0;
+  if ((global as any).extinfDebugCount < 10) {
+    console.log('[DEBUG ENTRY]', JSON.stringify(channel));
+    console.log('[DEBUG CATEGORY IN]', channel.category);
+  }
+  let group = channel.category && channel.category.trim() ? channel.category.trim() : '';
+  // Final fallback: always set to 'Other' if empty
+  if (!group) group = 'Other';
+  let info = `#EXTINF:-1 tvg-id="${channel.id || ''}" tvg-name="${channel.name || ''}" group-title="${group}"`;
+  // Debug: print the first 10 EXTINF lines and their group-title
+  if ((global as any).extinfDebugCount < 10) {
+    console.log('[DEBUG EXTINF FINAL]', info);
+    (global as any).extinfDebugCount++;
+  }
   let poster: string | null = null;
   if (channel.logo) poster = channel.logo;
   else {
@@ -110,24 +152,52 @@ function sortEntries(entries: M3UEntry[]): M3UEntry[] {
 }
 
 async function main(): Promise<void> {
+    console.log('[DEBUG] main() started');
+  const allM3Us = await getAllM3Us();
+  const INPUTS = [...allM3Us, ...INPUTS_EXTRA];
   let all: M3UEntry[] = [];
   for (const file of INPUTS) {
     if (!fs.existsSync(file)) continue;
     const m3u = fs.readFileSync(file, 'utf8');
-    all = all.concat(parseM3U(m3u));
+    all = all.concat(parseM3U(m3u, file));
   }
   // Deduplicate by name+url, validate
   const seen: Map<string, M3UEntry> = new Map();
   for (const entry of all) {
     if (!entry.url || !isValidUrl(entry.url)) continue;
-    // Skipping validateUrl for demo/test URLs
-    const key = entry.info + entry.url;
+    // Use name+url as deduplication key
+    const key = (entry.name || '') + (entry.url || '');
     if (!seen.has(key)) seen.set(key, entry);
   }
   const sorted = sortEntries(Array.from(seen.values()));
-  const lines = await Promise.all(sorted.map((e: M3UEntry) => extinf(e)));
-  fs.writeFileSync(OUTPUT, '#EXTM3U\n' + lines.join('\n'), 'utf8');
-  console.log(`[D] Wrote ${lines.length} entries to ${OUTPUT}`);
+  // Ensure every entry has a non-empty category before output
+  for (const entry of sorted) {
+    if (!entry.category || entry.category.trim() === '') {
+      entry.category = 'Other';
+    }
+  }
+  const lines: string[] = [];
+  for (const entry of sorted) {
+    // Debug: print entry before extinf
+    if ((global as any).mainDebugCount === undefined) (global as any).mainDebugCount = 0;
+    if ((global as any).mainDebugCount < 10) {
+      console.log('[DEBUG MAIN ENTRY]', JSON.stringify(entry));
+      (global as any).mainDebugCount++;
+    }
+    const extinfLine = await extinf(entry);
+    if (entry.url) {
+      lines.push(extinfLine);
+      lines.push(entry.url);
+    }
+  }
+  // Debug: write the first 10 output lines to debug-output.txt
+  console.log('[DEBUG] About to write debug-output.txt');
+  const debugLines = lines.slice(0, 10).join('\n');
+  fs.writeFileSync('debug-output.txt', debugLines, 'utf8');
+  console.log('[DEBUG] Finished writing debug-output.txt');
+  fs.writeFileSync(OUTPUT_PATH, '#EXTM3U\n' + lines.join('\n'), 'utf8');
+  console.log(`[D] Wrote ${lines.length / 2} entries to ${OUTPUT_PATH}`);
+  console.log('[DEBUG] Absolute OUTPUT path:', OUTPUT_PATH);
 }
 
 (async () => {

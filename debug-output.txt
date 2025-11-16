@@ -1,0 +1,11 @@
+[DEBUG] main() started
+[DEBUG EXTINF] #EXTINF:-1 tvg-id="MBCPlusDrama.ae" tvg-name="MBC Plus Drama (1080p)" group-title="Movies"
+[DEBUG EXTINF] #EXTINF:-1 tvg-id="JavananTV.us" tvg-name="Javanan TV (480p)" group-title="Movies;Series"
+[DEBUG EXTINF] #EXTINF:-1 tvg-id="RakutenTVDramaMovies.es@UK" tvg-name="Rakuten TV Drama Movies UK (1080p)" group-title="Other"
+[DEBUG EXTINF] #EXTINF:-1 tvg-id="WeyyakDrama.ae" tvg-name="Weyyak Drama (720p)" group-title="Movies"
+[DEBUG EXTINF] #EXTINF:-1 tvg-id="RakutenTVDramaMoviesSpain.es" tvg-name="Rakuten Drama" group-title="Movies"
+[DEBUG EXTINF] #EXTINF:-1 tvg-id="AmediaHit.ru" tvg-name="Amedia Hit (1080p) [Geo-blocked]" group-title="Movies;Series"
+[DEBUG EXTINF] #EXTINF:-1 tvg-id="AmediaPremium.ru" tvg-name="like Gecko) Mobile/15E148",Amedia Premium (480p)" group-title="Movies;Series"
+[DEBUG EXTINF] #EXTINF:-1 tvg-id="AlfaDramas.gr" tvg-name="Alfa Dramas (226p) [Not 24/7]" group-title="Movies"
+[DEBUG EXTINF] #EXTINF:-1 tvg-id="BravoFarsiTV.ir" tvg-name="Bravo Farsi TV (360p)" group-title="Movies;Series"
+[DEBUG EXTINF] #EXTINF:-1 tvg-id="FilmRiseSciFiFinland.fi" tvg-name="FilmRise Sci-Fi Finland" group-title="Movies;Series"

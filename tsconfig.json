@@ -1,20 +1,16 @@
 {
   "compilerOptions": {
     "strict": true,
-    "target": "es2022",
-    "module": "nodeNext",
-    "moduleResolution": "nodeNext",
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
     "typeRoots": [
       "./scripts/types",
       "./node_modules/@types"
     ],
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "outDir": "dist"
   },
-  "ts-node": {
-    "esm": true,
-    "transpileOnly": true
-  },
-  "files": [
-    "node_modules/jest-expect-message/types/index.d.ts"
-  ]
+  "include": ["scripts/**/*.ts"],
+  "exclude": ["node_modules"]
 }

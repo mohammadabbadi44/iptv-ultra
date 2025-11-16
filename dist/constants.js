@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.EOL = exports.REPO = exports.OWNER = exports.TESTING = exports.LOGS_DIR = exports.DATA_DIR = exports.API_DIR = exports.README_DIR = exports.PUBLIC_DIR = exports.STREAMS_DIR = exports.ROOT_DIR = void 0;
+exports.ROOT_DIR = process.env.ROOT_DIR || './';
+exports.STREAMS_DIR = process.env.STREAMS_DIR || './streams';
+exports.PUBLIC_DIR = process.env.PUBLIC_DIR || './.gh-pages';
+exports.README_DIR = process.env.README_DIR || './.readme';
+exports.API_DIR = process.env.API_DIR || './.api';
+exports.DATA_DIR = process.env.DATA_DIR || './temp/data';
+exports.LOGS_DIR = process.env.LOGS_DIR || './temp/logs';
+exports.TESTING = process.env.NODE_ENV === 'test' ? true : false;
+exports.OWNER = 'iptv-org';
+exports.REPO = 'iptv';
+exports.EOL = '\r\n';
