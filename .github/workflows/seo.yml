@@ -1,0 +1,54 @@
+name: SEO Optimization & Sitemap
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Every 24 hours
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  seo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate sitemap.xml
+        run: |
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > docs/sitemap.xml
+          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> docs/sitemap.xml
+          echo '  <url><loc>https://mohammadabbadi44.github.io/iptv-ultra/</loc></url>' >> docs/sitemap.xml
+          echo '  <url><loc>https://mohammadabbadi44.github.io/iptv-ultra/index.html</loc></url>' >> docs/sitemap.xml
+          for f in streams/*.m3u; do
+            fname=$(basename "$f")
+            echo "  <url><loc>https://mohammadabbadi44.github.io/iptv-ultra/streams/$fname</loc></url>" >> docs/sitemap.xml
+          done
+          echo '</urlset>' >> docs/sitemap.xml
+
+      - name: Update SEO metadata (index.html)
+        run: |
+          # Optionally update meta tags if needed (placeholder for future automation)
+          echo 'SEO metadata update step (manual for now)'
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/sitemap.xml
+          git commit -m 'Auto-update sitemap.xml [skip ci]' || echo 'No changes to commit'
+          git push
+
+      - name: Ping Google
+        run: |
+          curl -s 'https://www.google.com/ping?sitemap=https://mohammadabbadi44.github.io/iptv-ultra/sitemap.xml'
+
+      - name: Ping Bing
+        run: |
+          curl -s 'https://www.bing.com/ping?sitemap=https://mohammadabbadi44.github.io/iptv-ultra/sitemap.xml'
