@@ -11,12 +11,16 @@ async function getFetch(): Promise<typeof fetch> {
 }
 
 const INPUTS = [
+  'streams/movies.m3u',
   'streams/movies-arabic.m3u',
   'streams/movies-foreign.m3u',
   'streams/series-arabic.m3u',
   'streams/series-foreign.m3u',
+  'streams/tmdb-movies.m3u',
+  'streams/tmdb-series.m3u',
+  // يمكنك إضافة المزيد من القوائم هنا إذا أردت دمج قنوات أخرى
 ];
-const OUTPUT = 'streams/all.m3u';
+const OUTPUT = 'index.m3u';
 const LOGO_URL = 'https://raw.githubusercontent.com/mohammadabbadi44/iptv-ultra/master/.readme/preview.png';
 const TMDB_API_KEY = '1e8c1e0b8e7e3e5e7e8e7e8e7e8e7e8e'; // Demo key, replace with your own for production
 const TMDB_BASE = 'https://api.themoviedb.org/3/search/';
