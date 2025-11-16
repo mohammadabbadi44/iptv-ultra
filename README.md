@@ -1,4 +1,3 @@
-
 <p align="center">
 	<img src=".readme/preview.png" alt="IPTV-ULTRA Logo" width="160" style="border-radius:50%;background:#fff1;">
 </p>
@@ -64,8 +63,27 @@ IPTV-ULTRA provides high-quality, regularly updated IPTV M3U playlists for sport
 
 ---
 
-<p align="center">
-	<b>IPTV-ULTRA – Free IPTV M3U Playlists for Everyone</b>
-</p>
-├─ streams/          # قوائم M3U مصنّفة (حسب الدولة، الفئة، البائع)
+## روابط IPTV الموحدة
+
+- ملف موحد لكل القنوات والأفلام والمسلسلات:
+  
+  [streams/all.m3u](https://raw.githubusercontent.com/mohammadabbadi44/iptv-ultra/master/streams/all.m3u)
+
+- أفلام عربي:
+  
+  [streams/movies-arabic.m3u](https://raw.githubusercontent.com/mohammadabbadi44/iptv-ultra/master/streams/movies-arabic.m3u)
+
+- أفلام أجنبي:
+  
+  [streams/movies-foreign.m3u](https://raw.githubusercontent.com/mohammadabbadi44/iptv-ultra/master/streams/movies-foreign.m3u)
+
+- مسلسلات عربي:
+  
+  [streams/series-arabic.m3u](https://raw.githubusercontent.com/mohammadabbadi44/iptv-ultra/master/streams/series-arabic.m3u)
+
+- مسلسلات أجنبي:
+  
+  [streams/series-foreign.m3u](https://raw.githubusercontent.com/mohammadabbadi44/iptv-ultra/master/streams/series-foreign.m3u)
+
+> يمكنك نسخ أي رابط أعلاه واستخدامه مباشرة في أي مشغل IPTV أو تطبيق يدعم M3U.
 
