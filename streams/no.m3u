@@ -2,7 +2,7 @@
 #EXTINF:-1 tvg-id="CanalMotor.no@SD",Canal Motor (720p)
 https://digicom.hls.iptvdc.com/canalmotor/index.m3u8
 #EXTINF:-1 tvg-id="CanalMotor.no@SD",Canal Motor (720p)
-https://digicom.hls.iptvdc.com/motorstv/index.m3u8
+https://digicom.hls.iptvdc.com/canalmotor/index.m3u8
 #EXTINF:-1 tvg-id="Frikanalen.no@SD",Frikanalen (720p)
 https://frikanalen.no/stream/index.m3u8
 #EXTINF:-1 tvg-id="HopeChannelNorway.no@SD",Hope Channel Norge (720p)

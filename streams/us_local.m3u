@@ -54,7 +54,7 @@ http://66.242.170.53/hls/live/temp/index.m3u8
 #EXTINF:-1 tvg-id="AtlantaChannel.us@SD",Atlanta Channel (720p)
 http://media4.tripsmarter.com:1935/LiveTV/ACVBHD/playlist.m3u8
 #EXTINF:-1 tvg-id="AtlantaChannel.us@SD",Atlanta Channel (720p)
-https://5b0f5374bdf0c.streamlock.net:444/LiveTV/ATLHD/playlist.m3u8
+http://media4.tripsmarter.com:1935/LiveTV/ACVBHD/playlist.m3u8
 #EXTINF:-1 tvg-id="WATCDT1.us@SD",Atlanta's 57 WATC 57.1 (720p)
 https://uni01rtmp.tulix.tv/watc57/watc57/playlist.m3u8
 #EXTINF:-1 tvg-id="WATCDT2.us@SD",Atlanta's 57 WATC TOO 57.2 (720p)
@@ -251,7 +251,7 @@ https://cvtv.cvalley.net/hls/KMBCMeTV/KMBCMeTV.m3u8
 #EXTINF:-1 tvg-id="KMCIDT2.us@SD",KMCI-DT1 (720p)
 https://cvtv.cvalley.net/hls/KMCIBounceTV/KMCIBounceTV.m3u8
 #EXTINF:-1 tvg-id="KMCIDT1.us@SD",KMCI-DT1 (720p)
-https://cvtv.cvalley.net/hls/KMCIIND/KMCIIND.m3u8
+https://cvtv.cvalley.net/hls/KMCIBounceTV/KMCIBounceTV.m3u8
 #EXTINF:-1 tvg-id="KMIZDT1.us@SD",KMIZ-DT1 (720p)
 https://cvtv.cvalley.net/hls/KMIZABC/KMIZABC.m3u8
 #EXTINF:-1 tvg-id="KMIZDT2.us@SD",KMIZ-DT2 (720p)
@@ -423,7 +423,7 @@ https://cdn3.wowza.com/5/cXdyRHF0Z3kxN0k2/citynmb/G2044_002/playlist.m3u8
 #EXTINF:-1 tvg-id="KNOVCD1.us@SD",NOTV New Orleans TV (720p)
 http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/playlist.m3u8
 #EXTINF:-1 tvg-id="KNOVCD1.us@SD",NOTV New Orleans TV (720p)
-https://5b0f5374bdf0c.streamlock.net:444/LiveTV/NOTVHD/playlist.m3u8
+http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/playlist.m3u8
 #EXTINF:-1 tvg-id="KOCTChannel18.us@SD",Oceanside Community Television (KOCT) Community Channel 18 (720p)
 https://securestream10.champds.com/LIVE/KOCTCALIVE/KOCTCALIVE.m3u8
 #EXTINF:-1 tvg-id="KOCTChannel19.us@SD",Oceanside Community Television (KOCT) Education and Government Channel 19 (720p)

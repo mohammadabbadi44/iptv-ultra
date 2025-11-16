@@ -10,7 +10,7 @@ https://ams.juraganstreaming.com:5443/LiveApp/streams/arektv.m3u8
 #EXTINF:-1 tvg-id="AshiilTV.id@SD",Ashiil TV (480p)
 https://ams.juraganstreaming.com:5443/LiveApp/streams/ashiiltv2.m3u8
 #EXTINF:-1 tvg-id="AshiilTV.id@SD",Ashiil TV (480p)
-https://wahyu1ptv.pages.dev/AshiilTV-HD.m3u8
+https://ams.juraganstreaming.com:5443/LiveApp/streams/ashiiltv2.m3u8
 #EXTINF:-1 tvg-id="AsthaTV.id@HD",Astha TV (1080p) [Not 24/7]
 https://hgmtv.com:19360/asthatv/asthatv.m3u8
 #EXTINF:-1 tvg-id="AtambuaTV.id@HD",Atambua TV (720p)
@@ -210,7 +210,7 @@ https://salamtv.siar.us/live/salamtv.m3u8
 #EXTINF:-1 tvg-id="SaliraTV.id@SD",Salira TV (720p)
 https://live.salira.tv/p/3870/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="SaliraTV.id@SD",Salira TV (720p)
-https://live.salira.tv:3870/stream/play.m3u8
+https://live.salira.tv/p/3870/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="SampitTV.id@SD",Sampit TV (720p) [Not 24/7]
 https://sampit-tv.siar.us/live/sampit-tv.m3u8
 #EXTINF:-1 tvg-id="SangajiTV.id@SD",Sangaji TV (720p) [Not 24/7]
@@ -244,7 +244,7 @@ http://wms.klikhost.com/tegarjogja/tegarjogja/playlist.m3u8
 #EXTINF:-1 tvg-id="TegarTVLampung.id@SD",Tegar TV Lampung (480p) [Not 24/7] [Geo-blocked]
 http://wms.klikhost.com:1935/tegartv/tegartv/playlist.m3u8
 #EXTINF:-1 tvg-id="TegarTVLampung.id@SD",Tegar TV Lampung (480p) [Not 24/7] [Geo-blocked]
-https://5bf7b725107e5.streamlock.net/tegartv/tegartv/playlist.m3u8
+http://wms.klikhost.com:1935/tegartv/tegartv/playlist.m3u8
 #EXTINF:-1 tvg-id="TimorTV.id@HD",Timor TV (1080p)
 http://122.248.43.242:1935/TIMORTV/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="Trans7.id@SD",Trans7 (720p)
@@ -266,7 +266,7 @@ https://tvku.tv/hlsstream/hls/live.m3u8
 #EXTINF:-1 tvg-id="TVRParlemen.id@SD",TVR Parlemen (720p) [Not 24/7]
 http://103.18.181.69:1935/golive/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRParlemen.id@SD",TVR Parlemen (720p) [Not 24/7]
-https://ssv1.dpr.go.id/golive/livestream/playlist.m3u8
+http://103.18.181.69:1935/golive/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRI.id@Aceh",TVRI Aceh (720p)
 https://ott-balancer.tvri.go.id/live/eds/Aceh/hls/Aceh.m3u8
 #EXTINF:-1 tvg-id="TVRI.id@Bali",TVRI Bali (480p)

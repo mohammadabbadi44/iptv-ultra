@@ -14,7 +14,7 @@ https://live3.tdm.com.mo/ch5/info_ch5.live/playlist.m3u8
 #EXTINF:-1 tvg-id="TDMOuMun.mo@SD",TDM Ou Mun Macau Ch. 91 (720p)
 http://61.244.22.4/ch1/ch1.live/playlist.m3u8
 #EXTINF:-1 tvg-id="TDMOuMun.mo@SD",TDM Ou Mun Macau Ch. 91 (720p)
-https://live3.tdm.com.mo/ch1/ch1.live/playlist.m3u8
+http://61.244.22.4/ch1/ch1.live/playlist.m3u8
 #EXTINF:-1 tvg-id="TDMSports.mo@SD",TDM Sports Ch. 93 (720p)
 https://live3.tdm.com.mo/ch4/sport_ch4.live/playlist.m3u8
 #EXTINF:-1 tvg-id="",立法會直播 (Legislative Council Live) (720p)

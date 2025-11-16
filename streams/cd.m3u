@@ -20,7 +20,7 @@ https://radio.congoplanet.com/Congo_Planet_TV_Pop.sdp/Congo_Planet_TV_Pop/playli
 #EXTINF:-1 tvg-id="DigitalCongoTV.cd@SD",Digital Congo TV
 http://51.254.199.122:8080/DigitalCongoTV/index.m3u8
 #EXTINF:-1 tvg-id="DigitalCongoTV.cd@SD",Digital Congo TV
-https://uvotv-aniview.global.ssl.fastly.net/hls/live/2119692/dcc/playlist.m3u8
+http://51.254.199.122:8080/DigitalCongoTV/index.m3u8
 #EXTINF:-1 tvg-id="EVITV.cd@SD",EVI TV (720p)
 https://stream.berosat.live:19360/evi-tv/evi-tv.m3u8
 #EXTINF:-1 tvg-id="GeopolisTV.cd@SD",Géopolis TV (240p)
@@ -28,7 +28,7 @@ https://tnt-television.com/Geopolis_tv/index.m3u8
 #EXTINF:-1 tvg-id="Kin24.cd@SD",Kin24
 http://51.254.199.122:8080/kin24/index.m3u8
 #EXTINF:-1 tvg-id="Kin24.cd@SD",Kin24
-https://uvotv-aniview.global.ssl.fastly.net/hls/live/2119692/kin24/playlist.m3u8
+http://51.254.199.122:8080/kin24/index.m3u8
 #EXTINF:-1 tvg-id="",La Sentinelle TV (576p)
 https://tnt-television.com/LA_SENTINELLE/index.m3u8
 #EXTINF:-1 tvg-id="LBFDRTV.cd@SD",LBFD RTV (1080p)
@@ -60,8 +60,8 @@ https://uvotv-aniview.global.ssl.fastly.net/hls/live/2119692/rtnc1/playlist.m3u8
 #EXTINF:-1 tvg-id="RTNC3.cd@SD",RTNC 3
 http://51.254.199.122:8080/e-cableRTNC3/index.m3u8
 #EXTINF:-1 tvg-id="RTNC3.cd@SD",RTNC 3
-https://uvotv-aniview.global.ssl.fastly.net/hls/live/2119692/rtnc3/playlist.m3u8
+http://51.254.199.122:8080/e-cableRTNC3/index.m3u8
 #EXTINF:-1 tvg-id="RTVS1.cd@SD",RTVS1
 http://51.254.199.122:8080/RTVS1/index.m3u8
 #EXTINF:-1 tvg-id="RTVS1.cd@SD",RTVS1
-https://uvotv-aniview.global.ssl.fastly.net/hls/live/2119692/tvs1/playlist.m3u8
+http://51.254.199.122:8080/RTVS1/index.m3u8

@@ -32,7 +32,7 @@ http://78.130.250.2:8023/play/a02c/index.m3u8
 #EXTINF:-1 tvg-id="Ocko.cz@SD",Óčko (540p)
 https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko.stream.1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Ocko.cz@SD",Óčko (540p)
-https://ocko-live.ssl.cdn.cra.cz/channels/ocko/playlist.m3u8
+https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko.stream.1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OckoExpres.cz@SD",Óčko Expres (540p)
 https://ocko-live.ssl.cdn.cra.cz/channels/ocko_expres/playlist.m3u8
 #EXTINF:-1 tvg-id="OckoGold.cz@SD",Óčko Gold (540p) [Geo-blocked]

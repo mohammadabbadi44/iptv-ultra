@@ -14,13 +14,13 @@ https://amg01529-defiancetv-defiancemedia-glewed-tre8x.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="EstrellaNews.us@SD",Estrella News (720p)
 https://estrellanews-glewed.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="EstrellaTV.us@SD",Estrella TV (1080p)
-https://estrellatv-glewed.amagi.tv/playlist.m3u8
+https://estrellatv-oando.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="",Property & Reno [Geo-blocked]
-https://linear-476.frequency.stream/dist/glewedtv/476/hls/master/playlist.m3u8
+https://linear-476.frequency.stream/dist/xumo/476/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="PursuitUP.us@SD",Pursuit UP (720p)
 https://linear-205.frequency.stream/dist/glewedtv/205/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="",Real Disaster Channel [Geo-blocked]
-https://linear-475.frequency.stream/dist/glewedtv/475/hls/master/playlist.m3u8
+https://linear-475.frequency.stream/dist/xumo/475/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="SwerveSports.us@SD",Swerve Sports (1080p)
 https://linear-253.frequency.stream/dist/glewedtv/253/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="TraceLatina.fr@SD",Trace Latina

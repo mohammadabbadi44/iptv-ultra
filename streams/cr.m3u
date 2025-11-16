@@ -14,7 +14,7 @@ https://acceso.radiosportstv.online:3102/live/telemascrlive.m3u8
 #EXTINF:-1 tvg-id="Canal1.cr@SD",Canal 1 (720p)
 https://59ef525c24caa.streamlock.net/canal1cr/canal1cr/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal1.cr@SD",Canal 1 (720p)
-https://video20.klm99.com:3993/live/canal1crlive.m3u8
+https://59ef525c24caa.streamlock.net/canal1cr/canal1cr/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal2.cr@SD",Canal 2 (576p) [Geo-blocked]
 https://alba-cr-repretel-c2.stream.mediatiquestream.com/index.m3u8
 #EXTINF:-1 tvg-id="Canal3KMKTV.cr@SD",Canal 3 KMK TV (720p)
@@ -54,7 +54,7 @@ https://livecdn.enlace.plus/enlace/smil:enlace-hd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ExtremaKidsTV.cr@HD",Extrema Kids TV [Not 24/7]
 https://627bb251f23c7.streamlock.net:444/ExtremaKids/ExtremaKids/playlist.m3u8
 #EXTINF:-1 tvg-id="ExtremaTV.cr@SD",Extrema TV (720p)
-https://627bb251f23c7.streamlock.net:444/ExtremaTV/ExtremaTV/playlist.m3u8
+http://livestreamcdn.net:1935/ExtremaTV/ExtremaTV/playlist.m3u8
 #EXTINF:-1 tvg-id="FUTV.cr@SD",FUTV (1080p)
 https://live20.bozztv.com/akamaissh101/ssh101/livefutvcr/playlist.m3u8
 #EXTINF:-1 tvg-id="GAMTVcr.cr@SD",GAMTV.cr (720p)
@@ -98,7 +98,7 @@ https://stmv.streamingvip.click/sanvitotv/sanvitotv/playlist.m3u8
 #EXTINF:-1 tvg-id="SarapiquiTV.cr@SD",Sarapiqui TV (720p) [Not 24/7]
 http://tiquiciatv.com:1935/stv/web/playlist.m3u8
 #EXTINF:-1 tvg-id="SarapiquiTV.cr@SD",Sarapiqui TV (720p) [Not 24/7]
-https://lstv.duckdns.org:449/hls/stv.m3u8
+http://tiquiciatv.com:1935/stv/web/playlist.m3u8
 #EXTINF:-1 tvg-id="SOYPlanchaTV.cr@SD",SOY Plancha TV (720p)
 https://59ef525c24caa.streamlock.net/vmtv/soyplancha/playlist.m3u8
 #EXTINF:-1 tvg-id="TDtv.cr@SD",TDtv (720p)
@@ -106,7 +106,7 @@ https://cloudvideo.servers10.com:8081/8230/index.m3u8
 #EXTINF:-1 tvg-id="TeleUno.cr@SD",Tele Uno (720p) [Not 24/7]
 http://tv.teleunotv.cr:1935/TVUNO/TVUNO/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleUno.cr@SD",Tele Uno (720p) [Not 24/7]
-https://5d16127744872.streamlock.net/TVUNO/TVUNO/playlist.m3u8
+http://tv.teleunotv.cr:1935/TVUNO/TVUNO/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleBrunca.cr@SD",TeleBrunca (720p) [Not 24/7]
 https://59ef525c24caa.streamlock.net/telebrunca/telebrunca/playlist.m3u8
 #EXTINF:-1 tvg-id="Telefides.cr@SD",Telefides (720p)

@@ -1,91 +1,71 @@
+
+<p align="center">
+	<img src=".readme/preview.png" alt="IPTV-ULTRA Logo" width="160" style="border-radius:50%;background:#fff1;">
+</p>
+
 # IPTV-ULTRA
 
-مرحباً بك في **IPTV-ULTRA**، بوابتك لقوائم IPTV عالمية مرتبة ومشغل ويب حديث يعرض القنوات بصور سينمائية وقوائم قابلة للتخصيص.`
+**Free IPTV M3U Playlists for Sports, Movies, Arabic Channels, and Worldwide TV**
 
 ---
 
-## لماذا IPTV-ULTRA؟
-- أحدث القوائم من مشروع iptv-org مع روابط يتم التحقق منها تلقائياً.
-- مشغل ويب (داخل مجلد web/) يدعم التحميل من رابط أو ملف وسحب القنوات المفضلة بنقرة واحدة.
-- عينات جاهزة للأفلام والأسفار حتى تختبر الواجهة بدون إعداد مسبق.
-- سكريبتات TypeScript لإدارة القوائم، التحقق من الصحة، والتوليد التلقائي لروابط GitHub Pages.
+## About IPTV-ULTRA
+
+IPTV-ULTRA provides high-quality, regularly updated IPTV M3U playlists for sports, movies, Arabic channels, and worldwide TV. Enjoy 1080p/720p live streams with no registration, no ads, and no hassle. Perfect for VLC, IPTV Smarters, and any M3U-compatible player.
+
+- **Sports M3U**: Live sports channels from around the world
+- **Movies M3U**: Latest movies and entertainment
+- **Arabic Channels**: Saudi Arabia, Egypt, UAE, Palestine, and more
+- **Worldwide Playlists**: TV from every continent
+- **HD Streams**: 1080p / 720p quality
 
 ---
 
-## روابط سريعة
+## 🚀 Quick Start
 
-| النوع | الرابط |
-| --- | --- |
-| القائمة الشاملة | https://mohammadabbadi44.github.io/iptv-ultra/index.m3u |
-| التصفح حسب الدولة | راجع [PLAYLISTS.md](PLAYLISTS.md) |
-| دليل الأسئلة | [FAQ.md](FAQ.md) |
-| دعم أو اقتراح | [Discussions](https://github.com/mohammadabbadi44/iptv-ultra/discussions) |
+1. **Download a Playlist:**
+	 - [Sports M3U](streams/Sports.m3u)
+	 - [Movies M3U](streams/movies.m3u)
+	 - [Arabic Channels (Saudi Arabia)](streams/saudi-arabia.m3u)
+	 - [Arabic Channels (Egypt)](streams/egypt.m3u)
+	 - [Worldwide by Country](streams/by-country.m3u)
+	 - [General Playlist](streams/general.m3u)
 
-> تعمل الروابط أعلاه مع أي مشغل يدعم بروتوكول HLS أو قراءة ملفات M3U (VLC، IPTV Smarters، Kodi، وغيرهم).
-
----
-
-## مشغل الويب الحديث
-
-1. ثبّت الاعتمادات: npm install
-2. شغّل خادماً محلياً: npm run web:serve
-3. افتح الرابط الظاهر (عادةً http://localhost:4173) لتصل إلى web/index.html
-
-الواجهة تمنحك:
-- تحميل الملفات من الجهاز أو عبر لصق رابط .m3u/.m3u8.
-- بحث فوري، تصفية حسب المجموعة أو الدولة، وترتيب بحسب الجودة.
-- معرض بصور أفلام/وثائقيات مع أزرار تشغيل سريعة (web/samples/*.m3u).
-- مفضلة محلية تُحفظ في المتصفح لتعود لاحقاً لأهم قنواتك.
-
-> إن احتجت إلى استضافة الواجهة خارج بيئة التطوير، انسخ محتويات web/ إلى أي خدمة استضافة ملفات ثابتة.
+2. **Open with your favorite IPTV player** (VLC, IPTV Smarters, etc.)
 
 ---
 
-## قوائم التشغيل المضمّنة
+## 📥 Installation & Usage
 
-- streams/ يحتوي على القوائم الكاملة المولدة من iptv-org (حسب الدولة والفئة).
-- web/samples/ يضم قوائم صغيرة اختيارية للاختبارات (Cinema وWorld Mix) ويستند إليها زر "سينما" و"قنوات عالمية" في الواجهة.
-- استخدم 
-pm run playlist:validate للتحقق من صحة الصيغة، أو 
-pm run playlist:generate لتحديث المحتوى.
+- **No installation required!**
+- Download any `.m3u` file from the [streams](streams/) folder or from the [GitHub Pages site](https://mohammadabbadi44.github.io/iptv-ultra/).
+- Open the playlist in your IPTV player.
 
 ---
 
-## الأتمتة والمهام المهمة
+## 🔗 Useful Links
 
-| الأمر | الوصف |
-| --- | --- |
-| npm run check | يفحص القوائم عبر اللنتر وأدوات التحقق. |
-| npm run playlist:update | يجلب آخر البيانات من واجهة iptv-org ويعيد توليد الملفات. |
-| npm run deploy | ينشر القوائم وواجهة API إلى صفحات GitHub المرتبطة. |
-| npm run web:serve | يفتح المشغل الحديث بواجهة رسومية. |
-
-> جميع السكريبتات مبنية على TypeScript (tsx) لذا احرص على استخدام Node 18.18 أو أحدث كما هو محدد في package.json.
+- [GitHub Pages Site](https://mohammadabbadi44.github.io/iptv-ultra/)
+- [All Playlists (streams/)](streams/)
+- [FAQ](FAQ.md)
+- [Contributing](CONTRIBUTING.md)
 
 ---
 
-## هيكل المجلدات
+## 🏷️ SEO Keywords
 
-`
-.
+`iptv`, `free iptv`, `m3u`, `m3u8`, `sports`, `live tv`, `arabic channels`, `iptv 2025`, `best iptv playlists`, `free m3u playlist`, `iptv ultra`
+
+---
+
+## License
+
+[MIT](LICENSE)
+
+---
+
+<p align="center">
+	<b>IPTV-ULTRA – Free IPTV M3U Playlists for Everyone</b>
+</p>
 ├─ streams/          # قوائم M3U مصنّفة (حسب الدولة، الفئة، البائع)
-├─ web/              # واجهة الويب الحديثة + العينات والصور
-│  ├─ samples/       # قوائم صغيرة للتجربة داخل المتصفح
-│  ├─ app.js         # منطق التحميل، البحث، المشغل، وصور العناوين
-│  └─ styles.css     # الهوية البصرية الزجاجية والحركات
-├─ scripts/          # أدوات توليد القوائم والقراءة من API
-├─ tests/            # اختبارات Jest لوظائف المعالجة
-└─ README.md         # هذا الملف
-`
-
----
-
-
-## المساهمة والترخيص
-
-- اقرأ [CONTRIBUTING.md](CONTRIBUTING.md) قبل فتح طلبات السحب أو الإبلاغ عن مشكلة.
-- جميع الروابط علنية ويُفترض أنها متاحة من أصحاب الحقوق؛ أرسل طلب إزالة إن لم يكن كذلك.
-- المحتوى مرخّص حسب ملف LICENSE (حقوق Mohammad Abbadi 2025) ويُسمح بإعادة الاستخدام مع الإشارة للمصدر.
-
-استمتع بالمشاهدة ✨
 

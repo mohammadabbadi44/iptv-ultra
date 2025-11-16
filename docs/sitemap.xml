@@ -6,4 +6,16 @@
   <url>
     <loc>https://mohammadabbadi44.github.io/iptv-ultra/index.html</loc>
   </url>
+  <url>
+    <loc>https://mohammadabbadi44.github.io/iptv-ultra/streams/series-arabic.m3u</loc>
+  </url>
+  <url>
+    <loc>https://mohammadabbadi44.github.io/iptv-ultra/streams/series-foreign.m3u</loc>
+  </url>
+  <url>
+    <loc>https://mohammadabbadi44.github.io/iptv-ultra/streams/movies-arabic.m3u</loc>
+  </url>
+  <url>
+    <loc>https://mohammadabbadi44.github.io/iptv-ultra/streams/movies-foreign.m3u</loc>
+  </url>
 </urlset>

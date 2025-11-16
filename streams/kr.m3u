@@ -4,13 +4,13 @@ https://vod2.abn.co.kr/IPHONE/abn.m3u8
 #EXTINF:-1 tvg-id="ArirangRadio.kr@SD",Arirang Radio (720p)
 http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangRadio.kr@SD",Arirang Radio (720p)
-http://amdlive-ch02.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
+http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangRadio.kr@SD",Arirang Radio (720p)
-http://amdlive-ch03.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
+http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangRadio.kr@SD",Arirang Radio (720p)
-http://amdlive.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
+http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangRadio.kr@SD",Arirang Radio (720p)
-https://amdlive-ch02-ctnd-com.akamaized.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
+http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr@SD",Arirang TV (1080p)
 http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr@SD",Arirang TV (720p)
@@ -46,7 +46,7 @@ https://d34t5yjz1ooymj.cloudfront.net/out/v1/875039d5eba0478fa8375a06b3aa5a37/in
 #EXTINF:-1 tvg-id="EBS1TV.kr@SD",EBS 1 (400p) [Not 24/7]
 https://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/playlist.m3u8
 #EXTINF:-1 tvg-id="EBS1TV.kr@SD",EBS 1 (400p) [Not 24/7]
-https://ebsonair.ebs.co.kr/groundwavefamilypc/familypc1m/playlist.m3u8
+https://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/playlist.m3u8
 #EXTINF:-1 tvg-id="EBS2TV.kr@SD",EBS 2 (400p) [Not 24/7]
 https://ebsonair.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8
 #EXTINF:-1 tvg-id="EBSEnglish.kr@SD",EBS E (400p) [Not 24/7]
@@ -84,7 +84,7 @@ https://jcnonair-1108.acs.wecandeo.com/ms/3162/1108/index.m3u8
 #EXTINF:-1 tvg-id="JobplusTV.kr@SD",Job Plus TV (한국직업방송) (480p)
 http://live.worktv.or.kr:1935/live/wowtvlive1.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="JobplusTV.kr@SD",Job Plus TV (한국직업방송) (480p)
-https://live.jobplustv.or.kr/live/wowtvlive1.sdp/playlist.m3u8
+http://live.worktv.or.kr:1935/live/wowtvlive1.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="KCTV.kr@SD",KCTV 광주 CH05 (720p) [Not 24/7]
 http://119.77.96.184:1935/chn05/chn05/playlist.m3u8
 #EXTINF:-1 tvg-id="KTV.kr@SD",Korea TV (1080p)
@@ -146,7 +146,7 @@ https://vod.obs.co.kr:444/live/obsstream1/tv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="OCN.kr@SD",OCN (576p)
 http://202.60.106.14:8080/207/playlist.m3u8
 #EXTINF:-1 tvg-id="OCN.kr@SD",OCN (576p)
-http://202.60.106.14:21585/207/playlist.m3u8
+http://202.60.106.14:8080/207/playlist.m3u8
 #EXTINF:-1 tvg-id="OUN.kr@SD",OUN (1080p)
 https://live.knou.ac.kr/knou1/live1/playlist.m3u8
 #EXTINF:-1 tvg-id="RTV.kr@SD",RTV (720p)
@@ -198,4 +198,4 @@ http://157.245.196.186/live/livestream.m3u8
 #EXTINF:-1 tvg-id="YTN.kr@SD",YTN (720p)
 http://202.60.106.14:8080/214/playlist.m3u8
 #EXTINF:-1 tvg-id="YTN.kr@SD",YTN (720p)
-http://202.60.106.14:21585/214/playlist.m3u8
+http://202.60.106.14:8080/214/playlist.m3u8

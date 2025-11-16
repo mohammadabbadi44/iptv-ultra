@@ -214,13 +214,13 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 #EXTINF:-1 tvg-id="Colors.in@SD",Colors (1080p)
 http://87.255.35.150:18890
 #EXTINF:-1 tvg-id="Colors.in@SD" http-referrer="https://playyonogames.in/",Colors (1080p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://87.255.35.150:18890
 #KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
 https://playyonogames.in/live.php?extension=.m3u8&id=144
 #EXTINF:-1 tvg-id="ColorsBangla.in@SD",Colors Bangla (1080p)
 http://87.255.35.150:18236
 #EXTINF:-1 tvg-id="ColorsBangla.in@SD" http-referrer="https://playyonogames.in/",Colors Bangla (1080p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://87.255.35.150:18236
 #KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
 https://playyonogames.in/live.php?format=.m3u8&id=756
 #EXTINF:-1 tvg-id="ColorsCineplex.in@SD",Colors Cineplex (1080p)
@@ -228,7 +228,7 @@ http://87.255.35.150:18296
 #EXTINF:-1 tvg-id="ColorsCineplexBollywood.in@SD",Colors Cineplex Bollywood (576p)
 http://103.182.170.32:8888/play/a01o
 #EXTINF:-1 tvg-id="ColorsCineplexBollywood.in@SD" http-referrer="https://playyonogames.in/",Colors Cineplex Bollywood (576p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://103.182.170.32:8888/play/a01o
 https://playyonogames.in/live.php?format=.m3u8&id=1763
 #EXTINF:-1 tvg-id="ColorsCineplexSuperhits.in@SD" http-referrer="https://playyonogames.in/",Colors Cineplex Superhits (576p)
 #EXTVLCOPT:http-referrer=https://playyonogames.in/
@@ -236,19 +236,19 @@ https://playyonogames.in/live.php?format=.m3u8&id=1450
 #EXTINF:-1 tvg-id="ColorsGujarati.in@SD",Colors Gujarati (1080p)
 http://87.255.35.150:18230
 #EXTINF:-1 tvg-id="ColorsGujarati.in@SD" http-referrer="https://playyonogames.in/",Colors Gujarati (1080p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://87.255.35.150:18230
 #KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
 https://playyonogames.in/live.php?format=.m3u8&id=196
 #EXTINF:-1 tvg-id="ColorsInfinity.in@SD",Colors Infinity (1080p)
 http://87.255.35.150:18838
 #EXTINF:-1 tvg-id="ColorsInfinity.in@SD" http-referrer="https://playyonogames.in/",Colors Infinity (1080p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://87.255.35.150:18838
 #KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
 https://playyonogames.in/live.php?format=.m3u8&id=1158
 #EXTINF:-1 tvg-id="ColorsKannada.in@SD",Colors Kannada (1080p)
 http://87.255.35.150:18219
 #EXTINF:-1 tvg-id="ColorsKannada.in@SD" http-referrer="https://playyonogames.in/",Colors Kannada (1080p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://87.255.35.150:18219
 #KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
 https://playyonogames.in/live.php?format=.m3u8&id=757
 #EXTINF:-1 tvg-id="ColorsKannadaCinema.in@SD",Colors Kannada Cinema (576p)
@@ -256,13 +256,13 @@ http://87.255.35.150:18940
 #EXTINF:-1 tvg-id="ColorsMarathi.in@SD",Colors Marathi (1080p)
 http://87.255.35.150:18233
 #EXTINF:-1 tvg-id="ColorsMarathi.in@SD" http-referrer="https://playyonogames.in/",Colors Marathi (1080p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://87.255.35.150:18233
 #KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
 https://playyonogames.in/live.php?format=.m3u8&id=755
 #EXTINF:-1 tvg-id="ColorsRishteyAsia.in@SD",Colors Rishtey Asia (576p)
 http://87.255.35.150:18886
 #EXTINF:-1 tvg-id="ColorsRishteyAsia.in@SD" http-referrer="https://playyonogames.in/",Colors Rishtey Asia (576p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://87.255.35.150:18886
 #KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
 https://playyonogames.in/live.php?format=.m3u8&id=279
 #EXTINF:-1 tvg-id="ColorsSuper.in@SD" http-referrer="https://playyonogames.in/",Colors Super (720p)
@@ -274,7 +274,7 @@ http://87.255.35.150:18445
 #EXTINF:-1 tvg-id="ColorsTamil.in@SD",Colors Tamil (1080p)
 http://87.255.35.150:18225
 #EXTINF:-1 tvg-id="ColorsTamil.in@SD" http-referrer="https://playyonogames.in/",Colors Tamil (1080p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://87.255.35.150:18225
 #KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
 https://playyonogames.in/live.php?format=.m3u8&id=429
 #EXTINF:-1 tvg-id="CTVNAKDPlus.in@SD",CTVN AKD Plus (576p)
@@ -292,7 +292,7 @@ https://d2lk5u59tns74c.cloudfront.net/out/v1/308556d9fd1246adb479ef012a39bbfe/in
 #EXTINF:-1 tvg-id="DDAssam.in@SD",DD Assam
 https://d2lk5u59tns74c.cloudfront.net/out/v1/d380bf5c167b4319a46cdd8204bc26b2/index.m3u8
 #EXTINF:-1 tvg-id="DDAssam.in@SD",DD Assam
-https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/2192ea99-acab-475f-9761-615270547cd8/2.m3u8
+https://d2lk5u59tns74c.cloudfront.net/out/v1/d380bf5c167b4319a46cdd8204bc26b2/index.m3u8
 #EXTINF:-1 tvg-id="DDBangla.in@SD",DD Bangla
 https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/2e9e32a4-c4f7-49c3-96d6-c4e3660c7e3f/2.m3u8
 #EXTINF:-1 tvg-id="DDBharati.in@SD",DD Bharati (720p)
@@ -400,7 +400,7 @@ https://epiconvh.akamaized.net/live/epic/master.m3u8
 #EXTINF:-1 tvg-id="ETNow.in@SD",ET Now (720p)
 https://etnowweblive.akamaized.net/hls/live/2034678/ETNOWMSL4/chunklist_2.m3u8
 #EXTINF:-1 tvg-id="ETNow.in@SD",ET Now (720p)
-https://pubads.g.doubleclick.net/ssai/event/pJrzNyDoT_K_GwYQsijTsQ/master.m3u8
+https://etnowweblive.akamaized.net/hls/live/2034678/ETNOWMSL4/chunklist_2.m3u8
 #EXTINF:-1 tvg-id="ETNowSwadesh.in@SD",ET Now Swadesh (720p)
 https://d32gxr3r1ksq2p.cloudfront.net/master.m3u8
 #EXTINF:-1 tvg-id="ETVAbhiruchi.in@SD",ETV Abhiruchi (1080p)
@@ -430,7 +430,7 @@ https://xlbor37ydvaj-hls-live.wmncdn.net/firstindianewstv1/live.stream/index.m3u
 #EXTINF:-1 tvg-id="FlowersTV.in@SD",Flowers TV (576p)
 http://93.119.105.61/play/live.php?extension=ts&mac=00:1A:79:00:28:53&play_token=FPh4kuMnod&stream=443062
 #EXTINF:-1 tvg-id="FlowersTV.in@SD" http-referrer="https://playyonogames.in/",Flowers TV (576p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://93.119.105.61/play/live.php?extension=ts&mac=00:1A:79:00:28:53&play_token=FPh4kuMnod&stream=443062
 #KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
 https://playyonogames.in/live.php?format=.m3u8&id=634
 #EXTINF:-1 tvg-id="FoodFood.in@SD",Food Food (576p) [Not 24/7]
@@ -494,7 +494,7 @@ https://server.livelegitpro.in:9899/hindikhabar/hindikhabar/index.m3u8
 #EXTINF:-1 tvg-id="HistoryTV18.in@HD",History TV18 HD (1080p) [Geo-blocked]
 https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/playlist/amg01448-samsungindia-historychannelenglish-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-id="HistoryTV18.in@HD",History TV18 HD (1080p) [Geo-blocked]
-https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/ts-ap-s1-n1/playlist/amg01448-samsungindia-historychannelhindi-samsungin/playlist.m3u8
+https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/playlist/amg01448-samsungindia-historychannelenglish-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-id="HMTV.in@SD",HMTV (720p)
 https://cdn-1.pishow.tv/live/280/master.m3u8
 #EXTINF:-1 tvg-id="HNN24x7.in@SD",HNN 24x7 (576p)
@@ -686,7 +686,7 @@ https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccda
 #EXTINF:-1 tvg-id="MaxMiddleEast.in@SD",Max Middle East (1080p)
 http://87.255.35.150:18851
 #EXTINF:-1 tvg-id="MaxMiddleEast.in@SD" http-referrer="https://nxtlive.net/",Max Middle East (1080p)
-#EXTVLCOPT:http-referrer=https://nxtlive.net/
+http://87.255.35.150:18851
 #KODIPROP:inputstream.adaptive.stream_headers=referer==https://nxtlive.net/
 https://nxtlive.net/sliv/stream.php?e=.m3u8&id=94312380256
 #EXTINF:-1 tvg-id="Mayyazhi.in@SD",Mayyazhi (720p) [Not 24/7]
@@ -802,7 +802,7 @@ https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccda
 #EXTINF:-1 tvg-id="OdishaTV.in@SD",Odisha TV (720p)
 https://livetv.tarangplus.in/otv-origin/live/playlist.m3u8
 #EXTINF:-1 tvg-id="OneTV.in@SD",One TV (720p)
-http://137.59.86.218:1935/live/onetv/playlist.m3u8
+https://hms.pfs.gdn/v1/broadcast/one/playlist.m3u8
 #EXTINF:-1 tvg-id="OrangeBanglaTV.in@SD",Orange Bangla TV (720p)
 https://cdn-4.pishow.tv/live/1499/master.m3u8
 #EXTINF:-1 tvg-id="OscarMoviesBhojpuri.in@SD",Oscar Movies Bhojpuri (720p)
@@ -822,7 +822,7 @@ https://cdn-2.pishow.tv/live/1241/master.m3u8
 #EXTINF:-1 tvg-id="PopPataka.in@SD",Pop Pataka (480p) [Not 24/7]
 https://live.hungama.com/linear/pop-pataka/playlist.m3u8
 #EXTINF:-1 tvg-id="PowerTV.in@SD",Power TV (1080p)
-https://liveboxvideoconference.livebox.co.in/PowersmartMediahls/powertvlive.m3u8
+https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="PrameyaNews7.in@SD",Prameya News7 (1080p) [Not 24/7]
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/prameya-news7/index.m3u8?ads.dpname=distrotv
 #EXTINF:-1 tvg-id="PrarthanaTV.in@SD",Prarthana TV (720p)
@@ -984,7 +984,7 @@ https://yupplivefragcp3.yuppcdn.net/260423/smil:songdew.smil/index.m3u8
 #EXTINF:-1 tvg-id="Sonic.in@SD",Sonic (576p)
 http://116.90.120.149:8000/play/a0cc/index.m3u8
 #EXTINF:-1 tvg-id="Sonic.in@SD",Sonic (576p)
-https://playyonogames.in/jio/app/ts_live_815.m3u8
+http://116.90.120.149:8000/play/a0cc/index.m3u8
 #EXTINF:-1 tvg-id="SonyEntertainmentTelevision.in@SD" http-referrer="https://nxtlive.net/",Sony Entertainment Television (1080p)
 #EXTVLCOPT:http-referrer=https://nxtlive.net/
 #KODIPROP:inputstream.adaptive.stream_headers=referer==https://nxtlive.net/
@@ -1125,7 +1125,7 @@ https://livestream10.sunnxt.com/DolbyVision/SunTV_HDR/SunTV_HDR_Endpoints/SunTV-
 #EXTINF:-1 tvg-id="SuryaComedy.in@SD",Surya Comedy (576p)
 http://87.255.35.150:18253
 #EXTINF:-1 tvg-id="SuryaComedy.in@SD" http-referrer="https://playyonogames.in/",Surya Comedy (576p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://87.255.35.150:18253
 #KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
 https://playyonogames.in/live.php?format=.m3u8&id=1662
 #EXTINF:-1 tvg-id="SuryaMovies.in@SD" http-referrer="https://playyonogames.in/",Surya Movies (1080p)
@@ -1137,7 +1137,7 @@ http://87.255.35.150:18932
 #EXTINF:-1 tvg-id="SuryaMusic.in@SD",Surya Music (576p)
 http://87.255.35.150:18450
 #EXTINF:-1 tvg-id="SuryaMusic.in@SD" http-referrer="https://playyonogames.in/",Surya Music (576p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://87.255.35.150:18450
 #KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
 https://playyonogames.in/live.php?format=.m3u8&id=747
 #EXTINF:-1 tvg-id="SuryaTV.in@SD",Surya TV (1080p)
@@ -1189,7 +1189,7 @@ http://210.210.155.37/x6bnqe/s/s81/02.m3u8
 #EXTINF:-1 tvg-id="TotalBhakti.in@SD",Total Bhakti (1080p)
 https://d34z4embz0hjf6.cloudfront.net/out/v1/d55b3323a9f142638f897378f0b526fe/index.m3u8
 #EXTINF:-1 tvg-id="Travelxp.in@SD",Travelxp (720p)
-https://27c980761ff9437d929e64647afe183a.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_TravelXP/playlist.m3u8
+https://travelxp-travelxp-1-au.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Travelxp.in@Netherlands",Travelxp Netherlands
 https://travelxp-travelxp-3-nl.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TribeTV.in@SD",Tribe TV (720p)
@@ -1223,19 +1223,19 @@ http://87.255.35.150:18947
 #EXTINF:-1 tvg-id="UdayaMovies.in@SD",Udaya Movies (576p)
 http://87.255.35.150:18938
 #EXTINF:-1 tvg-id="UdayaMovies.in@SD" http-referrer="https://playyonogames.in/",Udaya Movies (576p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://87.255.35.150:18938
 #KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
 https://playyonogames.in/live.php?format=.m3u8&id=678
 #EXTINF:-1 tvg-id="UdayaMusic.in@SD",Udaya Music (576p)
 http://87.255.35.150:18941
 #EXTINF:-1 tvg-id="UdayaMusic.in@SD" http-referrer="https://playyonogames.in/",Udaya Music (576p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://87.255.35.150:18941
 #KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
 https://playyonogames.in/live.php?format=.m3u8&id=744
 #EXTINF:-1 tvg-id="UdayaTV.in@SD",Udaya TV (1080p)
 http://87.255.35.150:18289
 #EXTINF:-1 tvg-id="UdayaTV.in@SD" http-referrer="https://playyonogames.in/",Udaya TV (1080p)
-#EXTVLCOPT:http-referrer=https://playyonogames.in/
+http://87.255.35.150:18289
 #KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
 https://playyonogames.in/live.php?format=.m3u8&id=901
 #EXTINF:-1 tvg-id="V6News.in@SD",V6 News (576p)
@@ -1325,7 +1325,7 @@ http://87.255.35.150:18238
 #EXTINF:-1 tvg-id="ZeeBiharJharkhand.in@SD",Zee Bihar Jharkhand (720p)
 https://raw.githubusercontent.com/Alstruit/adaptive-streams/alstruit-4_24_in/streams/in/ZeeBiharJharkhand.m3u8
 #EXTINF:-1 tvg-id="ZeeBiharJharkhand.in@SD",Zee Bihar Jharkhand (720p)
-https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeebiharjharkhand/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/28077955-07d7-4ae2-8b11-9f318cd69420/main.m3u8
+https://raw.githubusercontent.com/Alstruit/adaptive-streams/alstruit-4_24_in/streams/in/ZeeBiharJharkhand.m3u8
 #EXTINF:-1 tvg-id="ZeeBollywood.in@SD",Zee Bollywood (576p)
 http://87.255.35.150:18861
 #EXTINF:-1 tvg-id="ZeeBusiness.in@SD",Zee Business (720p)
@@ -1411,7 +1411,7 @@ http://66.102.120.18:8000/play/a013/index.m3u8
 #EXTINF:-1 tvg-id="4TVNews.in@SD",4TV News (576p)
 https://cdn-4.pishow.tv/live/1007/master.m3u8
 #EXTINF:-1 tvg-id="KairaliWe.in@SD",Kairali We (576p)
-https://cdn-3.pishow.tv/live/1530/master.m3u8
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
 #EXTINF:-1 tvg-id="CVRHealth.in@SD",CVR Health (576p)
 https://cdn-6.pishow.tv/live/395/master.m3u8
 #EXTINF:-1 tvg-id="AKDCalcuttaNews.in@SD",AKD Calcutta News (576p)

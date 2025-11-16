@@ -18,7 +18,7 @@ https://mbit1.worldcast.tv/dancetelevisionsix/multibit.m3u8
 #EXTINF:-1 tvg-id="DanceTVTechnoWarehouse.ee@SD",DanceTV Techno Warehouse (1080p)
 https://m2b2.worldcast.tv:7443/dancetelevisionthree/dancetelevisionthree.m3u8
 #EXTINF:-1 tvg-id="ETV.ee@SD",ETV (720p)
-https://sb.err.ee/live/etv.m3u8
+https://cdn4.skygo.mn/live/disk1/ETV/HLSv3-FTA/ETV.m3u8
 #EXTINF:-1 tvg-id="ETV2.ee@SD",ETV2 (720p)
 https://sb.err.ee/live/etv2.m3u8
 #EXTINF:-1 tvg-id="ETVPlus.ee@SD",ETV+ (720p)
@@ -26,9 +26,9 @@ https://sb.err.ee/live/etvpluss.m3u8
 #EXTINF:-1 tvg-id="LifeTV.ee@SD",Life TV (432p) [Not 24/7]
 http://lifetv.bitflip.ee/live/stream1_1/index.m3u8
 #EXTINF:-1 tvg-id="LifeTV.ee@SD",Life TV (432p) [Not 24/7]
-https://lifetv.bitflip.ee/live/stream1.m3u8
+http://lifetv.bitflip.ee/live/stream1_1/index.m3u8
 #EXTINF:-1 tvg-id="Nickelodeon.ee@SD",Nickelodeon (576p)
-http://195.64.140.147:10121/121
+http://46.8.46.14/Nickelodeon/index.m3u8
 #EXTINF:-1 tvg-id="Pingviin.ee@SD",Pingviin (576p)
 https://void.greenhosting.ru/PingviinEE_Mpeg4/index.m3u8
 #EXTINF:-1 tvg-id="Riigikogu.ee@SD",Riigikogu (720p)

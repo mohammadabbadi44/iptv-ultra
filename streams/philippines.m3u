@@ -80,7 +80,7 @@ https://ythls.onrender.com/channel/UCAxAaFQnH5IK_ZTwiQWV-9A.m3u8
 #EXTINF:-1 tvg-id="PTV4.ph" tvg-logo="https://i.imgur.com/T3jDOEq.png" group-title="News",PTV 4 (480p) [Not 24/7]
 https://ythls.onrender.com/channel/UCJCUbMaY593_4SN1QPG7NFQ.m3u8
 #EXTINF:-1 tvg-id="PTV.ph" tvg-logo="https://i.imgur.com/MMccHNd.png" group-title="Undefined",PTV (720p)
-https://raw.githubusercontent.com/azgaresncf/strm2hls/main/streams/PTV.m3u8
+https://cdn10.live-tv.cloud/hrpl/hrpl-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="RaiItaliaAsia.it" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Rai_Italia_-_Logo_2017.svg/512px-Rai_Italia_-_Logo_2017.svg.png" group-title="Undefined",RAI Italia Asia (576p)
 http://210.210.155.37/x6bnqe/s/s63/index2.m3u8
 #EXTINF:-1 tvg-id="ROCKAction.sg" tvg-logo="https://playtv.unifi.com.my:7047/CPS/images/universal/film/logo/202212/20221211/20221211230555493f2h.png" group-title="Entertainment",ROCK Action (576p) [Geo-blocked]

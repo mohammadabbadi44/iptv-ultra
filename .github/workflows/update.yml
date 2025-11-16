@@ -1,63 +1,43 @@
-name: update
+name: Auto Update IPTV Playlists
+
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
-permissions:
-  packages: read
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
 jobs:
-  main:
+  update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: tibdex/github-app-token@v1.8.2
-        if: ${{ !env.ACT }}
-        id: create-app-token
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: actions/checkout@v4
-        if: ${{ !env.ACT }}
-        with:
-          token: ${{ steps.create-app-token.outputs.token }}
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: 'npm'
-      - name: Setup .npmrc for GitHub Packages
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
-          echo "@iptv-org:registry=https://npm.pkg.github.com/" >> .npmrc
-          echo "always-auth=true" >> .npmrc
+          node-version: 18
       - name: Install dependencies
         run: npm install
-      - name: Update internal playlists
-        run: npm run playlist:update --silent >> $GITHUB_OUTPUT
-        id: playlist-update
-      - name: Check internal playlists
-        run: |
-          npm run playlist:lint
-          npm run playlist:validate
-      - name: Generate public playlists
+      - name: Analyze Quality
+        run: npx tsx scripts/manager/analyze-quality.ts
+      - name: Remove Duplicates
+        run: npx tsx scripts/manager/remove-duplicates.ts
+      - name: Sort Channels
+        run: npx tsx scripts/manager/sort-channels.ts
+      - name: Apply Logo
+        run: npx tsx scripts/manager/apply-logo.ts
+      - name: Merge Playlists
+        run: npx tsx scripts/manager/merge-playlists.ts
+      - name: Generate Playlists
         run: npm run playlist:generate
-      - name: Generate .api/streams.json
-        run: npm run api:generate
-      - name: Update readme
-        run: npm run readme:update
-      - name: Setup git
+      - name: Commit changes
         run: |
-          git config user.name "iptv-bot[bot]"
-          git config user.email "84861620+iptv-bot[bot]@users.noreply.github.com"
-      - name: Commit changes to /streams
-        run: |
-          git add streams
-          git status
-          git commit --allow-empty -m "[Bot] Update /streams" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow." -m "${{ steps.playlist-update.outputs.OUTPUT }}" --no-verify
-      - name: Commit changes to PLAYLIST.md
-        run: |
-          git add PLAYLISTS.md
-          git status
-          git commit --allow-empty -m "[Bot] Update PLAYLISTS.md" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow." --no-verify
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m "Auto update: optimized channels, cleaned duplicates, sorted, applied logo, merged playlists" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Push all changes to the repository
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         run: git push

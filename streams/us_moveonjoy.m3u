@@ -96,7 +96,7 @@ https://fl1.moveonjoy.com/TVG/index.m3u8
 #EXTINF:-1 tvg-id="FoxBusinessNetwork.us@SD",Fox Business Network (720p)
 https://fl1.moveonjoy.com/FOX_Business_Network/index.m3u8
 #EXTINF:-1 tvg-id="FoxNewsChannel.us@SD",Fox News Channel (720p)
-https://fl1.moveonjoy.com/FOX_NEWS_CHANNEL/index.m3u8
+#EXTVLCOPT:http-referrer=https://www.newslive.com/
 #EXTINF:-1 tvg-id="FoxSoul.us@SD",Fox Soul
 https://fl1.moveonjoy.com/FOX_SOUL/index.m3u8
 #EXTINF:-1 tvg-id="",Fox Sports 1
@@ -130,7 +130,7 @@ https://fl1.moveonjoy.com/HALLMARK_MOVIES_MYSTERIES/index.m3u8
 #EXTINF:-1 tvg-id="History.us@East",History
 https://fl1.moveonjoy.com/history_channel/index.m3u8
 #EXTINF:-1 tvg-id="HSN.us@East",HSN
-https://fl1.moveonjoy.com/HSN/index.m3u8
+https://qvc-amd-live.akamaized.net/hls/live/2034113/lshsn1us/master.m3u8
 #EXTINF:-1 tvg-id="INSP.us@SD",INSP
 https://fl1.moveonjoy.com/INSP/index.m3u8
 #EXTINF:-1 tvg-id="IONPlus.us@East",ION Plus East (720p)
@@ -196,7 +196,7 @@ https://fl1.moveonjoy.com/OUTDOOR_CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="OuterMax.us@East",OuterMax East (720p)
 https://fl1.moveonjoy.com/OUTER_MAX/index.m3u8
 #EXTINF:-1 tvg-id="OutsideTV.us@SD",Outside TV
-https://fl1.moveonjoy.com/OUTSIDE_TV/index.m3u8
+https://outsidetv-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Ovation.us@SD",Ovation (1080p)
 https://fl1.moveonjoy.com/Ovation/index.m3u8
 #EXTINF:-1 tvg-id="Oxygen.us@East",Oxygen East
@@ -248,7 +248,7 @@ https://fl1.moveonjoy.com/SYFY/index.m3u8
 #EXTINF:-1 tvg-id="TeenNick.us@East",TeenNick
 https://fl1.moveonjoy.com/Teen_Nick/index.m3u8
 #EXTINF:-1 tvg-id="TennisChannel.us@SD",Tennis Channel
-https://fl1.moveonjoy.com/TENNIS_CHANNEL/index.m3u8
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannelnl-samsungnl/playlist.m3u8
 #EXTINF:-1 tvg-id="TheCowboyChannel.us@SD",The Cowboy Channel
 https://fl1.moveonjoy.com/Cowboy_Channel/index.m3u8
 #EXTINF:-1 tvg-id="TSN1.ca@SD",TSN1 (1080p)

@@ -82,7 +82,7 @@ https://www.opencaster.com/resources/hls_stream/hipodromojcp2.m3u8
 #EXTINF:-1 tvg-id="Nativa.pe@SD",Nativa (720p) [Not 24/7]
 https://oneplay.iptvperu.tv:1936/static/nativa1.stream/chunks.m3u8
 #EXTINF:-1 tvg-id="Nativa.pe@SD",Nativa (720p) [Not 24/7]
-https://servilive.com:3449/live/mlecaroslive.m3u8
+https://oneplay.iptvperu.tv:1936/static/nativa1.stream/chunks.m3u8
 #EXTINF:-1 tvg-id="NativaTVSatipo.pe@SD",Nativa TV Satipo (720p) [Not 24/7]
 https://7.innovatestream.pe:19360/nativatv/nativatv.m3u8
 #EXTINF:-1 tvg-id="NazarenasTV.pe@SD",Nazarenas TV (720p) [Not 24/7]

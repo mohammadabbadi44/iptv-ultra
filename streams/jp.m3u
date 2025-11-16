@@ -29,7 +29,7 @@ http://171.244.62.178/jptv2/get.php?id=p1cu_Z3QI6VV01VJmw8vJQ==
 #EXTINF:-1 tvg-id="JOTXDTV.jp@SD",JOTX-DTV
 http://171.244.62.178/jptv2/get.php?id=2eX5WUIdzetyhgy8L8plEQ==
 #EXTINF:-1 tvg-id="MTV.jp@SD",MTV (1080p)
-https://hkali.youyouko.com/api/streams/live/cs323/1080p/mpegts
+https://hms.pfs.gdn/v1/broadcast/mtv/playlist.m3u8
 #EXTINF:-1 tvg-id="MUSICONTV.jp@SD",MUSIC ON! TV (1080p)
 https://43.100.9.67/api/streams/live/cs325/1080p/mpegts
 #EXTINF:-1 tvg-id="JOAKDTV.jp@SD",NHK G (Tokyo) (540p) [Not 24/7]

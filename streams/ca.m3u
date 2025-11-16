@@ -90,7 +90,7 @@ http://cdn12.henico.net:8080/live/dncal/index.m3u8
 #EXTINF:-1 tvg-id="EawazTV.ca@SD",Eawaz TV (720p) [Not 24/7]
 https://streamer12.vdn.dstreamone.net/saazoawaz/saazoawaz/playlist.m3u8
 #EXTINF:-1 tvg-id="EETTV.ca@SD",EET TV (1080p) [Not 24/7]
-https://eu.streamjo.com/eetlive/eettv.m3u8
+https://live.streamjo.com/eetlive/eettv.m3u8
 #EXTINF:-1 tvg-id="ErfanHalghehTV.ca@SD",Erfan Halgheh TV (720p)
 https://hls.erfanhalgheh.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="EWTN.us@Canada",EWTN Canada (720p)
@@ -216,7 +216,7 @@ https://live2.parnian.tv/hls/live/play.m3u8
 #EXTINF:-1 tvg-id="PlymouthRockTV.ca@SD",Plymouth Rock TV (1080p)
 https://vse2-eu-all59.secdn.net/barakyah-channel/live/plymouthtv/playlist.m3u8
 #EXTINF:-1 tvg-id="PlymouthRockTV.ca@SD",Plymouth Rock TV (1080p)
-https://vse2-eu-all59.secdn.net/barakyah-channel/live/plymouthtvedge/playlist.m3u8
+https://vse2-eu-all59.secdn.net/barakyah-channel/live/plymouthtv/playlist.m3u8
 #EXTINF:-1 tvg-id="PrimeAsiaTV.ca@SD",Prime Asia TV (1080p)
 http://primeasia.selfip.net/Samsung/index.m3u8
 #EXTINF:-1 tvg-id="PrimeCanadaTV.ca@SD",Prime Canada TV (720p) [Not 24/7]

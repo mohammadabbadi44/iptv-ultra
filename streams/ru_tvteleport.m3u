@@ -4,7 +4,7 @@ http://31.148.48.15/A1/index.m3u8
 #EXTINF:-1 tvg-id="A2.ru@SD",Amedia 2
 http://31.148.48.15/A2/index.m3u8
 #EXTINF:-1 tvg-id="Ani.ru@SD",Ani
-http://31.148.48.15/Ani/index.m3u8
+http://stv.mediacdn.ru/live/cdn/ani/playlist.m3u8
 #EXTINF:-1 tvg-id="BRIDGE.ru@SD",BRIDGE
 http://31.148.48.15/Bridge_TV/index.m3u8
 #EXTINF:-1 tvg-id="BRIDGEClassic.ru@SD",BRIDGE Classic
@@ -42,7 +42,7 @@ http://31.148.48.15/Zee_TV_Russia/index.m3u8
 #EXTINF:-1 tvg-id="Istoriya.ru@SD",История
 http://31.148.48.15/Istoriya/index.m3u8
 #EXTINF:-1 tvg-id="Carousel.ru@HD",Карусель
-http://31.148.48.15/Karusel_HD/index.m3u8
+https://streaming.televizor-24-tochka.ru/live/11.m3u8
 #EXTINF:-1 tvg-id="KVNTV.ru@SD",КВН ТВ
 http://31.148.48.15/KVN_TV/index.m3u8
 #EXTINF:-1 tvg-id="Kinopokaz.ru@SD",Кинопоказ

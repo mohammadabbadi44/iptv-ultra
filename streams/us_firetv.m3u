@@ -44,7 +44,7 @@ https://nbcu-nbcdallasfortworthnews-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="",NBC Los Angeles News
 https://nbcu-nbclosangelesnews-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="",NBC New York News
-https://nbcu-nbcnewyorknews-firetv.amagi.tv/playlist.m3u8
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65790c72cbd0d60008fac4d0/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a5100-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=1590d16f-7216-4de9-80e8-cd9f77d26da8
 #EXTINF:-1 tvg-id="",NBC Philadelphia News
 https://nbcu-nbcphiladelphianews-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="",NBC San Diego News
@@ -76,7 +76,7 @@ https://amg02333-pbs-amg02333c8-firetv-us-4239.playouts.now.amagi.tv/playlist.m3
 #EXTINF:-1 tvg-id="PBSNature.us@SD",PBS Nature (1080p) [Geo-blocked]
 https://amg02333-pbs-amg02333c11-firetv-us-4242.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="",PBS Retro (1080p) [Geo-blocked]
-https://amg02333-pbs-amg02333c6-firetv-us-4236.playouts.now.amagi.tv/playlist.m3u8
+https://d2spdq8rliqjem.cloudfront.net/v1/master/43fcaa28f618f06de1eb896cc4c2469172c85466/ac2206ef-c654-4325-8725-85d995901b62/live.m3u8
 #EXTINF:-1 tvg-id="",Power Rangers (1080p) [Geo-blocked]
 https://amg00461-eone-amg00461c2-firetv-us-5210.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="SportsGrid.us@SD",SportsGrid

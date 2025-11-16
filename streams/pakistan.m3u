@@ -12,7 +12,7 @@ https://cdn.bmstudiopk.com/alehsaan/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ARYDigital.pk" tvg-logo="https://i.imgur.com/TVP7g03.png" group-title="Undefined",ARY Digital (1080p)
 https://arydigital.aryzap.com/101647b94a234edb1d8be0996ebedc9e/6459fa3c/v1/0183ea2408f90b8ed5941a38bc72/0183ea24302d0b8ed5941a38bc75/main.m3u8
 #EXTINF:-1 tvg-id="ARYMusik.pk" tvg-logo="https://upload.wikimedia.org/wikipedia/en/b/bb/ARY_Musik_logo.png" group-title="Music",ARY Musik (1080p)
-https://arymusik.aryzap.com/3fd38b2c62d0c3bbd74aedabb533c03a/6459fa78/v1/01847ac7a4930b8ed5aa6ed04aba/01847ac8f5f70b8ed5aa6ed04abd/main.m3u8
+#EXTVLCOPT:http-referrer=https://live.arydigital.tv/
 #EXTINF:-1 tvg-id="ARYNews.pk" tvg-logo="https://i.imgur.com/R4KtTbJ.jpg" group-title="News",ARY News (1080p) [Not 24/7]
 https://ythls.onrender.com/channel/UCMmpLL2ucRHAXbNHiCPyIyg.m3u8
 #EXTINF:-1 tvg-id="ARYQtv.pk" tvg-logo="https://i.imgur.com/eP2OW5S.png" group-title="Undefined",ARY Qtv (1080p)
@@ -77,7 +77,7 @@ https://streamone.simpaisa.com:8443/pitvlive1/k21.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KhyberMiddleEastTV.pk" tvg-logo="https://i.imgur.com/IbtXjqm.png" group-title="Undefined",Khyber Middle East
 https://streamone.simpaisa.com:8443/pitvlive1/khyber.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KhyberNews.pk" tvg-logo="https://i.imgur.com/7SyLba4.png" group-title="News",Khyber News
-https://streamone.simpaisa.com:8443/pitvlive1/khybernews.smil/playlist.m3u8
+https://trn03.tulix.tv/gf-khybernews/index.m3u8
 #EXTINF:-1 tvg-id="KingTV.pk" tvg-logo="https://i.imgur.com/dujrwRE.png" group-title="Undefined",King TV (720p)
 https://streamer12.vdn.dstreamone.net/kingtv/kingtv/playlist.m3u8
 #EXTINF:-1 tvg-id="LahoreNews.pk" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/67/Lahore_News.png" group-title="News",Lahore News (720p) [Not 24/7]
@@ -119,7 +119,7 @@ https://ythls.onrender.com/channel/UCJekW1Vj5fCVEGdye_mBN6Q.m3u8
 #EXTINF:-1 tvg-id="ShineStarTV.pk" tvg-logo="https://i.imgur.com/I3lTIeN.png" group-title="Undefined",Shine Star TV (720p) [Not 24/7]
 https://f-tx-edge-87.christianworldmedia.com/shinetvpak2/mp4:shinetvpak2/playlist.m3u8
 #EXTINF:-1 tvg-id="SindhTVNews.pk" tvg-logo="https://i.imgur.com/Ap9K1lj.png" group-title="News",Sindh TV News
-https://streamone.simpaisa.com:8443/pitvlive1/sindhnews.smil/playlist.m3u8
+https://uvotv-aniview.global.ssl.fastly.net/hls/live/2119688/sindhnews/playlist.m3u8
 #EXTINF:-1 tvg-id="SmithsonianChannelAsia.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/SmithsonianChannellogo.png/512px-SmithsonianChannellogo.png" group-title="Science",Smithsonian Channel
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01553-blueantmediaasi-smithsoniannz-samsungnz/playlist.m3u8
 #EXTINF:-1 tvg-id="SuchTV.pk" tvg-logo="https://i.imgur.com/yYMh3JJ.png" group-title="News",Such TV (720p) [Not 24/7]

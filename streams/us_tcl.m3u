@@ -4,7 +4,7 @@ https://bloodydisgusting-tcl.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="ComedyDynamics.us@SD",Comedy Dynamics (1080p)
 https://comedydynamics-tcl.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Docurama.us@SD",Docurama (1080p)
-https://docurama-tcl.amagi.tv/playlist.m3u8
+https://docurama-plex-ingest.cinedigm.com/playlist.m3u8
 #EXTINF:-1 tvg-id="DoveChannel.us@SD",Dove Channel (1080p)
 https://dovenow-tcl.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="SoReal.us@US",So... Real (1080p)

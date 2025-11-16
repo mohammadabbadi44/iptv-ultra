@@ -36,7 +36,7 @@ https://tv.wyatts-server.com/stream/channelid/1236662026?auth=Lo47lPuhjUwYZIPv+N
 #EXTINF:-1 tvg-id="WairarapaTV.nz@SD",Wairarapa TV (1080p) [Not 24/7]
 https://stream1.np.co.nz/WAITVABR/WAITVABR/playlist.m3u8
 #EXTINF:-1 tvg-id="WairarapaTV.nz@SD",Wairarapa TV (1080p) [Not 24/7]
-https://stream.wairarapatv.co.nz/Broadband_High/playlist.m3u8
+https://stream1.np.co.nz/WAITVABR/WAITVABR/playlist.m3u8
 #EXTINF:-1 tvg-id="WairarapaTV.nz@SD",Wairarapa TV (360p) [Not 24/7]
 https://stream.wairarapatv.co.nz/Cellular_High/playlist.m3u8
 #EXTINF:-1 tvg-id="WhakaataMaori.nz@SD",Whakaata Maori

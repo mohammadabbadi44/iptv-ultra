@@ -4,7 +4,7 @@ http://100automoto.tv:1935/bgtv1/autotv/playlist.m3u8
 #EXTINF:-1 tvg-id="AgroTV.bg" tvg-logo="https://i.imgur.com/tPMNDtD.png" group-title="Undefined",Agro TV (480p)
 https://restr2.bgtv.bg/agro/hls/agro.m3u8
 #EXTINF:-1 tvg-id="AngelTVEurope.in" tvg-logo="https://i.imgur.com/qKLEGU7.png" group-title="Religious",Angel TV Europe (720p)
-https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angeleurope_all/playlist.m3u8
+https://janya-digimix.akamaized.net/vglive-sk-512011/europe/ngrp:angeleurope_all/playlist.m3u8
 #EXTINF:-1 tvg-id="B1BBox.bg" tvg-logo="https://i.imgur.com/ahtpiPJ.png" group-title="Undefined",B1B Box (720p)
 https://e105-ts.cdn.bg/b1b/fls/b1btv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="BalkanikaTV.bg" tvg-logo="https://i.imgur.com/lnKH5SP.png" group-title="Music",Balkanika TV (270p)
@@ -57,9 +57,9 @@ https://fashiontv-fashiontv-1-eu.rakuten.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="FenFolk.bg" tvg-logo="https://i.imgur.com/Xb0WSn4.png" group-title="Undefined",Fen Folk (720p) [Not 24/7]
 https://ythls.onrender.com/channel/UCptENFbwjv79hmQPymnwKcA.m3u8
 #EXTINF:-1 tvg-id="LightChannel.bg" tvg-logo="https://i.imgur.com/S3Fbf8T.png" group-title="Undefined",Light Channel (480p) [Not 24/7]
-https://streamer1.streamhost.org/salive/GMIlcbgM/playlist.m3u8
+http://streamer1.streamhost.org:1935/salive/GMIlcbgM/playlist.m3u8
 #EXTINF:-1 tvg-id="MagicTV.bg" tvg-logo="https://i.imgur.com/n7bcrrp.png" group-title="Undefined",Magic TV (720p)
-https://bss1.neterra.tv/magictv/magictv.m3u8
+https://tv.broadcasting.ro/magictv/925f90db-5c88-4190-a53d-5163cdffe6f4.m3u8
 #EXTINF:-1 tvg-id="NovaNews.bg" tvg-logo="https://i.imgur.com/g75WnDf.png" group-title="News",NovaNews (576p)
 http://79.124.21.251:9777/play/a00v/index.m3u8
 #EXTINF:-1 tvg-id="PIKTV.bg" tvg-logo="https://i.ibb.co/NpbZSmX/pik-tv-logo.png" group-title="News",PIK TV (720p)
@@ -77,7 +77,7 @@ https://streamer103.neterra.tv/tiankov-orient/live.m3u8
 #EXTINF:-1 tvg-id="TravelTV.bg" tvg-logo="https://i.imgur.com/eZjcf2R.png" group-title="Travel",Travel TV (576p)
 https://streamer103.neterra.tv/travel/live.m3u8
 #EXTINF:-1 tvg-id="TV1.bg" tvg-logo="https://i.imgur.com/WBcgOUS.png" group-title="Undefined",TV 1 (720p)
-https://tv1.cloudcdn.bg:8081/stream.m3u8
+https://edge1.socialsmart.tv/tv1/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-logo="https://i.imgur.com/rPAbMSu.png" group-title="General",TV5Monde Europe (1080p) [Geo-blocked]
 https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/variant.m3u8
 #EXTINF:-1 tvg-id="TVDarts.bg" tvg-logo="https://i.imgur.com/3bTXMaR.png" group-title="General",TV Darts (576p)
@@ -87,6 +87,6 @@ http://141.136.14.18/kanal1/kanal1.m3u8
 #EXTINF:-1 tvg-id="TVart.bg" tvg-logo="https://i.imgur.com/YNmrCF7.png" group-title="Culture;Travel",TVart (1080p)
 https://stream.osc.bg/tvart/Stream3/playlist.m3u8
 #EXTINF:-1 tvg-id="TVNBulgaria.bg" tvg-logo="https://i.imgur.com/kkNtmAW.png" group-title="News",TVN-Bulgaria (1080p)
-https://obs.friendshipchurch.eu//tvn/mystream.m3u8
+https://obs.friendshipchurch.eu/tvn/mystream.m3u8
 #EXTINF:-1 tvg-id="WeatherSpyEurope.us" tvg-logo="https://i.imgur.com/KIEKOt1.png" group-title="Weather",WeatherSpy Europe (720p)
 https://jukin-weatherspy-2-eu.rakuten.wurl.tv/playlist.m3u8

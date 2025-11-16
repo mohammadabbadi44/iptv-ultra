@@ -30,11 +30,11 @@ https://live.mnet.mk/hls/mnet-info.m3u8
 #EXTINF:-1 tvg-id="MNetKids.mk@SD",M-Net Kids (720p)
 http://ares.mnet.mk/hls/mnet-kids.m3u8
 #EXTINF:-1 tvg-id="MNetKids.mk@SD",M-Net Kids (720p)
-https://giganet.mk/hls/mnet-kids.m3u8
+http://ares.mnet.mk/hls/mnet-kids.m3u8
 #EXTINF:-1 tvg-id="MNetSport.mk@SD",M-Net Sport (720p)
 http://ares.mnet.mk/hls/mnet-sport.m3u8
 #EXTINF:-1 tvg-id="MNetSport.mk@SD",M-Net Sport (720p)
-https://giganet.mk/hls/mnet-sport.m3u8
+http://ares.mnet.mk/hls/mnet-sport.m3u8
 #EXTINF:-1 tvg-id="MNetSport.mk@SD",M-Net Sport
 https://live.mnet.mk/hls/mnet-sport.m3u8
 #EXTINF:-1 tvg-id="MakedonskoSonce.mk@SD",Makedonsko Sonce (1080p)
@@ -54,11 +54,11 @@ https://stream.nasatv.com.mk/rocktv/hls/rocktv_live.m3u8
 #EXTINF:-1 tvg-id="Sitel.mk@SD",Sitel (480p)
 http://51.178.133.43:8081/tvstanici/s1/playlist.m3u8
 #EXTINF:-1 tvg-id="Sitel.mk@SD",Sitel (480p)
-https://teve.mk/tvstanici/s1/playlist.m3u8
+http://51.178.133.43:8081/tvstanici/s1/playlist.m3u8
 #EXTINF:-1 tvg-id="SkyFolkTV.mk@SD",Sky Folk TV (720p) [Not 24/7]
 https://eu.live.skyfolk.mk/live.m3u8
 #EXTINF:-1 tvg-id="SkyFolkTV.mk@SD",Sky Folk TV (720p) [Not 24/7]
-https://skyfolk.mk/live.m3u8
+https://eu.live.skyfolk.mk/live.m3u8
 #EXTINF:-1 tvg-id="StarFolkTV.mk@SD",Star Folk (1080p)
 https://live.muzickatv.mk/live/StarMusic.m3u8
 #EXTINF:-1 tvg-id="StarPlusTelevizija.mk@SD",Star Plus Music (1080p) [Not 24/7]

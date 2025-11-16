@@ -26,6 +26,10 @@ const AI_KEYWORDS = [
   { keyword: /hollywood.*movie/i, file: 'movies-foreign' },
 ];
 
+const TMDB_API_KEY = '1e8c1e0b8e7e3e5e7e8e7e8e7e8e7e8e'; // Demo key, replace with your own for production
+const TMDB_BASE = 'https://api.themoviedb.org/3/search/';
+const TMDB_IMG = 'https://image.tmdb.org/t/p/w500';
+
 function isValidUrl(url: string) {
   return /^https?:\/\/.+\.(m3u8?|ts)$/.test(url);
 }
@@ -39,8 +43,31 @@ async function validateUrl(url: string) {
   }
 }
 
-function extinf(name: string, group: string) {
-  return `#EXTINF:-1 tvg-name="${name}" group-title="${group}" tvg-logo="${LOGO_URL}",${name}`;
+async function getPoster(name: string, type: 'movie' | 'tv'): Promise<string | null> {
+  try {
+    const url = `${TMDB_BASE}${type}?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(name)}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    if (data.results && data.results[0] && data.results[0].poster_path) {
+      return TMDB_IMG + data.results[0].poster_path;
+    }
+  } catch {}
+  return null;
+}
+
+
+async function extinf(channel: any): Promise<string> {
+  let info = `#EXTINF:-1 tvg-id="${channel.id}" tvg-name="${channel.name}" group-title="${channel.category || ''}"`;
+  let poster = null;
+  if (channel.logo) poster = channel.logo;
+  else {
+    // Guess type
+    const type = (channel.category || '').toLowerCase().includes('series') ? 'tv' : 'movie';
+    poster = await getPoster(channel.name, type as 'movie' | 'tv');
+  }
+  if (!poster) poster = LOGO_URL;
+  info += ` tvg-logo="${poster}"`;
+  return info + `,${channel.name}`;
 }
 
 function aiClassify(name: string): string | null {
@@ -73,7 +100,9 @@ async function main() {
         const name = url.split('/').pop() || url;
         const type = aiClassify(name);
         if (!type) continue;
-        categorized[type].push(extinf(name, type) + '\n' + url);
+        const channel = { id: name, name, category: type, url };
+        const extinfLine = await extinf(channel);
+        categorized[type].push(extinfLine + '\n' + url);
       }
     } catch (e) {
       console.error(`[C] Failed to crawl ${site}:`, e);

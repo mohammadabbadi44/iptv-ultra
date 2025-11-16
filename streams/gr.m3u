@@ -18,7 +18,7 @@ http://alphatvlive.siliconweb.com/1/Y2Rsd1lUcUVoajcv/UVdCN25h/hls/live/playlist.
 #EXTINF:-1 tvg-id="ANT1.gr@SD",ANT1 (1080p) [Geo-blocked]
 http://d1nfykbwa3n98t.cloudfront.net/out/v1/6e5667da5a6843899a337dea72adb61b/antenna.m3u8
 #EXTINF:-1 tvg-id="ANT1.gr@SD" http-referrer="http://watch.antennaplus.gr" http-user-agent="Chrome",ANT1 (1080p) [Geo-blocked]
-#EXTVLCOPT:http-referrer=http://watch.antennaplus.gr
+http://d1nfykbwa3n98t.cloudfront.net/out/v1/6e5667da5a6843899a337dea72adb61b/antenna.m3u8
 #EXTVLCOPT:http-user-agent=Chrome
 https://mcdn.antennaplus.gr/live/media0/Ant1/HLS/Ant1.m3u8
 #EXTINF:-1 tvg-id="ANT1.gr@HD",ANT1 HD (1080p)
@@ -169,7 +169,7 @@ http://62.210.211.188:2095/play/a00d
 #EXTINF:-1 tvg-id="NeaTV.gr@SD",Nea TV (720p)
 https://live.neatv.gr:8888/hls/neatv.m3u8
 #EXTINF:-1 tvg-id="NeaTV.gr@SD",Nea TV (720p)
-https://live.neatv.gr:8888/hls/neatv_high/index.m3u8
+https://live.neatv.gr:8888/hls/neatv.m3u8
 #EXTINF:-1 tvg-id="NetmaxTV.gr@SD",Netmax TV (720p) [Not 24/7]
 http://live.netmaxtv.com:8080/live/live/playlist.m3u8
 #EXTINF:-1 tvg-id="NetmaxTV.gr@SD",Netmax TV (720p)
@@ -219,7 +219,7 @@ http://live.cast-control.eu:1935/samiaki/samiaki/playlist.m3u8
 #EXTINF:-1 tvg-id="SkaiTV.gr@SD",Skai TV (720p)
 http://skai-live-back.siliconweb.com/media/cambria4/index.m3u8
 #EXTINF:-1 tvg-id="SkaiTV.gr@SD",Skai TV (720p)
-http://skai-live.siliconweb.com/media/cambria4/index.m3u8
+http://skai-live-back.siliconweb.com/media/cambria4/index.m3u8
 #EXTINF:-1 tvg-id="SmileTV.gr@SD",Smile TV (360p) [Geo-blocked]
 https://s1.cystream.net/live/smile/playlist.m3u8
 #EXTINF:-1 tvg-id="StarChannel.gr@SD",Star Channel (720p)

@@ -42,7 +42,7 @@ https://d3d85c7qkywguj.cloudfront.net/scheduler/scheduleMaster/263.m3u8
 #EXTINF:-1 tvg-id="FreebieTV.us@SD",Freebie TV (720p)
 https://d26pp4b7ojtlyn.cloudfront.net/scheduler/scheduleMaster/187.m3u8
 #EXTINF:-1 tvg-id="FUELTV.at@SD",Fuel TV (1080p)
-https://amg01074-fueltv-amg01074c1-stirr-us-4214.playouts.now.amagi.tv/playlist.m3u8
+https://amg01074-fueltv-fueltvemeaen-rakuten-b6j62.amagi.tv/hls/amagi_hls_data_rakutenAA-fueltvemeaen/CDN/master.m3u8
 #EXTINF:-1 tvg-id="",GenB TV (1080p)
 https://bad-badiv-stirr.otteravision.com/bad/badiv/badiv.m3u8
 #EXTINF:-1 tvg-id="GoTraveler.us@SD",GoTraveler (1080p)
@@ -54,11 +54,11 @@ https://du1gyxfing4ke.cloudfront.net/scheduler/scheduleMaster/152.m3u8
 #EXTINF:-1 tvg-id="JewishLifeTelevision.us@SD",Jewish Life Television (1080p)
 https://jlt-jltv-stirr.otteravision.com/jlt/jltv/jltv.m3u8
 #EXTINF:-1 tvg-id="LawCrime.us@SD",Law & Crime (720p)
-https://cdn.lawandcrime.net/rewind/playlist.m3u8
+https://a-cdn.klowdtv.com/live3/law_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="",My Money (1080p)
 https://d3bqd6nz14unwy.cloudfront.net/scheduler/scheduleMaster/468.m3u8
 #EXTINF:-1 tvg-id="NTDTVEnglish.us@USA",NTD TV English (1080p)
-https://amg17596-ntdtv-amg17596c1-stirr-us-4738.playouts.now.amagi.tv/ntd.m3u8
+https://amg17596-ntdtv-amg17596c1-rakuten-gb-6741.playouts.now.amagi.tv/playlist/amg17596-newtangdynastytelevision-ntdtv-rakutengb/playlist.m3u8
 #EXTINF:-1 tvg-id="",Omstars (1080p)
 https://d1too6m5v9oyet.cloudfront.net/scheduler/scheduleMaster/281.m3u8
 #EXTINF:-1 tvg-id="OnTV4U.us@SD",OnTV4U (1080p) [Geo-blocked]
@@ -66,7 +66,7 @@ https://stirr.b-cdn.net/stirr/playlist.m3u8
 #EXTINF:-1 tvg-id="",Our Vinyl (1080p)
 https://d29rvfbwwm1vce.cloudfront.net/scheduler/scheduleMaster/459.m3u8
 #EXTINF:-1 tvg-id="PlymouthRockTV.ca@SD",Plymouth Rock TV (1080p)
-https://d30au7974f7qoa.cloudfront.net/scheduler/scheduleMaster/419.m3u8
+https://vse2-eu-all59.secdn.net/barakyah-channel/live/plymouthtv/playlist.m3u8
 #EXTINF:-1 tvg-id="PokerNightInAmerica.us@SD",Poker Night in America (1080p)
 https://d2njbreu8qyfxo.cloudfront.net/scheduler/scheduleMaster/216.m3u8
 #EXTINF:-1 tvg-id="PopstarTV.us@SD",Popstar! TV (1080p)
@@ -76,11 +76,11 @@ https://linear-205.frequency.stream/dist/stirr/205/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="",QVC The Big Dish Channel (1080p)
 https://amg01717-qvc-amg01717c1-stirr-us-2651.playouts.now.amagi.tv/qvc-bigdishdelayed-switcher-localnow/playlist.m3u8
 #EXTINF:-1 tvg-id="RightNowTV.us@SD",RightNow TV (720p)
-https://2-fss-1.streamhoster.com/pl_154/amlst:205448-2145652/rightnowtv.m3u8
+https://a-cdn.klowdtv.com/live2/rightnowtv_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="RVTV.us@HD",RVTV (1080p) [Geo-blocked]
 https://rvtv-stirr.b-cdn.net/rvtv-on-stirr/playlist.m3u8
 #EXTINF:-1 tvg-id="ShopLC.us@SD",Shop LC (1080p)
-https://cdn-shop-lc-01.vos360.video/Content/HLS_HLS/Live/channel(ShopLCStirrTV)/master.m3u8
+https://cdn-shop-lc-01.akamaized.net/Content/DASH_DASH/Live/channel(ott)/master.mpd
 #EXTINF:-1 tvg-id="",Speed Sport 1 (1080p)
 https://linear-599.frequency.stream/dist/stirr/599/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="",Sports First (1080p)
@@ -90,7 +90,7 @@ https://d3kddmbw1dqgzz.cloudfront.net/scheduler/scheduleMaster/332.m3u8
 #EXTINF:-1 tvg-id="",Surfing+ (1080p)
 https://dr4jwhk0sty71.cloudfront.net/scheduler/scheduleMaster/444.m3u8
 #EXTINF:-1 tvg-id="SwerveSports.us@SD",Swerve Sports (1080p)
-https://linear-253.frequency.stream/dist/stirr/253/hls/master/playlist.m3u8
+https://linear-253.frequency.stream/dist/glewedtv/253/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="TBN.us@East",TBN (720p)
 https://d7ge95bb03xsu.cloudfront.net/out/v1/e0fd0e2c760641fa816a3e216b3ca9c0/tbn-stirr.m3u8
 #EXTINF:-1 tvg-id="",Teton Gravity Research (1080p)

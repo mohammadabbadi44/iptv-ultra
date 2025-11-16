@@ -12,6 +12,9 @@ const INPUTS: string[] = [
 ];
 const OUTPUT = 'combined/all.m3u';
 const LOGO_URL = 'https://raw.githubusercontent.com/mohammadabbadi44/iptv-ultra/master/.readme/preview.png';
+const TMDB_API_KEY = '1e8c1e0b8e7e3e5e7e8e7e8e7e8e7e8e'; // Demo key, replace with your own for production
+const TMDB_BASE = 'https://api.themoviedb.org/3/search/';
+const TMDB_IMG = 'https://image.tmdb.org/t/p/w500';
 
 function parseM3U(m3u: string) {
   const entries = [];
@@ -41,10 +44,30 @@ async function validateUrl(url: string) {
   }
 }
 
-function extinf(entry: any) {
-  let info = entry.info;
-  if (!/tvg-logo=/.test(info)) info = info.replace('group-title="', `group-title="`, 1) + ` tvg-logo="${LOGO_URL}"`;
-  return info;
+async function getPoster(name: string, type: 'movie' | 'tv'): Promise<string | null> {
+  try {
+    const url = `${TMDB_BASE}${type}?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(name)}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    if (data.results && data.results[0] && data.results[0].poster_path) {
+      return TMDB_IMG + data.results[0].poster_path;
+    }
+  } catch {}
+  return null;
+}
+
+async function extinf(channel: any): Promise<string> {
+  let info = `#EXTINF:-1 tvg-id="${channel.id}" tvg-name="${channel.name}" group-title="${channel.category || ''}"`;
+  let poster = null;
+  if (channel.logo) poster = channel.logo;
+  else {
+    // Guess type
+    const type = (channel.category || '').toLowerCase().includes('series') ? 'tv' : 'movie';
+    poster = await getPoster(channel.name, type as 'movie' | 'tv');
+  }
+  if (!poster) poster = LOGO_URL;
+  info += ` tvg-logo="${poster}"`;
+  return info + `,${channel.name}`;
 }
 
 function sortEntries(entries: any[]) {
@@ -80,7 +103,7 @@ async function main() {
     if (!seen.has(key)) seen.set(key, entry);
   }
   const sorted = sortEntries(Array.from(seen.values()));
-  const lines = sorted.map(e => extinf(e) + '\n' + e.url);
+  const lines = await Promise.all(sorted.map(e => extinf(e)));
   fs.writeFileSync(OUTPUT, '#EXTM3U\n' + lines.join('\n'), 'utf8');
   console.log(`[D] Wrote ${lines.length} entries to ${OUTPUT}`);
 }

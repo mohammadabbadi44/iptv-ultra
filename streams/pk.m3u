@@ -28,7 +28,7 @@ https://uvotv-aniview.global.ssl.fastly.net/hls/live/2119688/discoverpakistan/pl
 #EXTINF:-1 tvg-id="DunyaNews.pk@SD",Dunya News (INT Feed) (720p) [Not 24/7]
 https://imob.dunyanews.tv/livehd/ngrp:dunyalivehd_2_all/playlist.m3u8
 #EXTINF:-1 tvg-id="DunyaNews.pk@SD",Dunya News (INT Feed) (720p) [Not 24/7]
-https://intl.dunyanews.tv/livehd/ngrp:dunyalivehd_2_all/playlist.m3u8
+https://imob.dunyanews.tv/livehd/ngrp:dunyalivehd_2_all/playlist.m3u8
 #EXTINF:-1 tvg-id="DunyaNewsUK.uk@SD",Dunya News (UK Feed) (720p) [Not 24/7]
 https://ukintl.dunyanews.tv/liveuk/ngrp:dunyalive_all/playlist.m3u8
 #EXTINF:-1 tvg-id="ExpressEntertainment.pk@SD",Express Entertainment (1080p)
@@ -96,7 +96,7 @@ https://f-tx-edge-87.christianworldmedia.com/shinetvpak2/mp4:shinetvpak2/playlis
 #EXTINF:-1 tvg-id="SindhTV.pk@SD",Sindh TV
 https://stream717.duckdns.org/hls/stream1.m3u8
 #EXTINF:-1 tvg-id="SindhTV.pk@SD",Sindh TV
-https://uvotv-aniview.global.ssl.fastly.net/hls/live/2119688/sindhtv/playlist.m3u8
+https://stream717.duckdns.org/hls/stream1.m3u8
 #EXTINF:-1 tvg-id="SindhTVNews.pk@SD",Sindh TV News
 https://uvotv-aniview.global.ssl.fastly.net/hls/live/2119688/sindhnews/playlist.m3u8
 #EXTINF:-1 tvg-id="SuchTV.pk@SD",Such TV

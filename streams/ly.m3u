@@ -13,9 +13,9 @@ https://uvotv-aniview.global.ssl.fastly.net/hls/live/2120977/libyaalwataniya/pla
 #EXTINF:-1 tvg-id="TanasuhTV.ly@HD",Tanasuh TV (1080p)
 https://kilolink.pulsarstarsolutions.com/live/smil:tanasuhtv.smil/manifest.m3u8
 #EXTINF:-1 tvg-id="TanasuhTV.ly@HD",Tanasuh TV (1080p)
-https://kilolink.pulsarstarsolutions.com/live/smil:tanasuhtv.smil/manifest.mpd
+https://kilolink.pulsarstarsolutions.com/live/smil:tanasuhtv.smil/manifest.m3u8
 #EXTINF:-1 tvg-id="TanasuhTV.ly@HD",Tanasuh TV (1080p)
-https://tip.stream.tanasuh.tv:4434/live/smil:tanasuhtv.smil/playlist.m3u8
+https://kilolink.pulsarstarsolutions.com/live/smil:tanasuhtv.smil/manifest.m3u8
 #EXTINF:-1 tvg-id="TanasuhTV.ly@HD",Tanasuh TV
 https://uvotv-aniview.global.ssl.fastly.net/hls/live/2120686/tanasuhtv/playlist.m3u8
 #EXTINF:-1 tvg-id="WasatTV.ly@SD" http-referrer="https://alwasat.ly/",Wasat TV (1080p)

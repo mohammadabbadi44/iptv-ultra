@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mohammadabbadi44.github.io/iptv-ultra/site/sitemap.xml

@@ -30,7 +30,7 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=1083
 #EXTINF:-1 tvg-id="",Haz Clic!
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=4310
 #EXTINF:-1 tvg-id="",ITV Deportes
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=3010
+https://thm-it-roku.otteravision.com/thm/it/it.m3u8
 #EXTINF:-1 tvg-id="",Mundo Pequeño
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=3366
 #EXTINF:-1 tvg-id="",Novelas Turcas

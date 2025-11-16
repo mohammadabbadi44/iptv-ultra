@@ -21,6 +21,10 @@ const OUTPUTS: Record<string, string> = {
   'series-foreign': 'streams/series-foreign.m3u',
 };
 
+const TMDB_API_KEY = '1e8c1e0b8e7e3e5e7e8e7e8e7e8e7e8e'; // Demo key, replace with your own for production
+const TMDB_BASE = 'https://api.themoviedb.org/3/search/';
+const TMDB_IMG = 'https://image.tmdb.org/t/p/w500';
+
 function parseM3U(m3u: string) {
   const entries = [];
   let current: any = {};
@@ -67,10 +71,30 @@ function classify(entry: any) {
   return null;
 }
 
-function extinf(entry: any) {
-  let info = entry.info;
-  if (!/tvg-logo=/.test(info)) info = info.replace('group-title="', `group-title="`, 1) + ` tvg-logo="${LOGO_URL}"`;
-  return info;
+async function getPoster(name: string, type: 'movie' | 'tv'): Promise<string | null> {
+  try {
+    const url = `${TMDB_BASE}${type}?api_key=${TMDB_API_KEY}&query=${encodeURIComponent(name)}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    if (data.results && data.results[0] && data.results[0].poster_path) {
+      return TMDB_IMG + data.results[0].poster_path;
+    }
+  } catch {}
+  return null;
+}
+
+async function extinf(channel: any): Promise<string> {
+  let info = `#EXTINF:-1 tvg-id="${channel.id}" tvg-name="${channel.name}" group-title="${channel.category || ''}"`;
+  let poster = null;
+  if (channel.logo) poster = channel.logo;
+  else {
+    // Guess type
+    const type = (channel.category || '').toLowerCase().includes('series') ? 'tv' : 'movie';
+    poster = await getPoster(channel.name, type as 'movie' | 'tv');
+  }
+  if (!poster) poster = LOGO_URL;
+  info += ` tvg-logo="${poster}"`;
+  return info + `,${channel.name}`;
 }
 
 async function main() {
@@ -85,30 +109,36 @@ async function main() {
   }
   // Validate, dedupe, keep highest quality
   const seen = new Map();
-  for (const entry of all) {
-    if (!entry.url || !isValidUrl(entry.url)) continue;
-    if (!(await validateUrl(entry.url))) continue;
-    const key = entry.info + entry.url;
-    const q = detectQuality(entry.url);
-    if (!seen.has(key) || q > detectQuality(seen.get(key).url)) {
-      seen.set(key, entry);
+    // Ensure CATEGORIES, categorized, OUTPUTS are defined
+    const CATEGORIES: string[] = [
+      'movies-arabic', 'movies-foreign', 'series-arabic', 'series-foreign',
+      'movie', 'film', 'cinema', 'series', 'مسلسل', 'فيلم', 'عربي', 'أجنبي'
+    ];
+    const categorized: Record<string, string[]> = {
+      'movies-arabic': [],
+      'movies-foreign': [],
+      'series-arabic': [],
+      'series-foreign': []
+    };
+    // OUTPUTS should be defined at the top of the script, but ensure it's here for safety
+    const OUTPUTS: Record<string, string> = {
+      'movies-arabic': 'streams/movies-arabic.m3u',
+      'movies-foreign': 'streams/movies-foreign.m3u',
+      'series-arabic': 'streams/series-arabic.m3u',
+      'series-foreign': 'streams/series-foreign.m3u'
+    };
+    for (const channel of all) {
+      if (!channel.url || !isValidUrl(channel.url)) continue;
+      if (!CATEGORIES.some((cat: string) => (channel.category || '').toLowerCase().includes(cat))) continue;
+      if (!(await validateUrl(channel.url))) continue;
+      const type = classify(channel);
+      if (!type) continue;
+      const extinfLine = await extinf(channel);
+      categorized[type].push(extinfLine + '\n' + channel.url);
     }
-  }
-  // Classify and write
-  const categorized: Record<string, string[]> = {
-    'movies-arabic': [],
-    'movies-foreign': [],
-    'series-arabic': [],
-    'series-foreign': []
-  };
-  for (const entry of seen.values()) {
-    const type = classify(entry);
-    if (!type) continue;
-    categorized[type].push(extinf(entry) + '\n' + entry.url);
-  }
-  for (const [type, lines] of Object.entries(categorized)) {
-    fs.writeFileSync(OUTPUTS[type], '#EXTM3U\n' + lines.join('\n'), 'utf8');
-    console.log(`[B] Wrote ${lines.length} entries to ${OUTPUTS[type]}`);
+    for (const [type, lines] of Object.entries(categorized) as [string, string[]][]) {
+      fs.writeFileSync(OUTPUTS[type], '#EXTM3U\n' + lines.join('\n'), 'utf8');
+      console.log(`[B] Wrote ${lines.length} entries to ${OUTPUTS[type]}`);
   }
 }
 

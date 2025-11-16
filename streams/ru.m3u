@@ -20,7 +20,7 @@ https://streams2.sofast.tv/vglive-sk-462904/playlist.m3u8
 #EXTINF:-1 tvg-id="Nickelodeon.ru@SD",Nickelodeon (576p)
 http://46.8.46.14/Nickelodeon/index.m3u8
 #EXTINF:-1 tvg-id="Nicktoons.ru@SD",Nicktoons (576p)
-http://94.232.127.28:8080/nicktoons/index.m3u8
+https://a1xs.vip/100054
 #EXTINF:-1 tvg-id="Pro100TV.ru@SD",Pro100TV
 https://sirius.greenhosting.ru/Pro100tvRu/video.m3u8
 #EXTINF:-1 tvg-id="RTDocumentary.ru@English",RT Documentary (1080p)
@@ -102,7 +102,7 @@ https://cdn-01.bonus-tv.ru/kmir/playlist.m3u8
 #EXTINF:-1 tvg-id="RedLine.ru@SD",Красная линия
 http://s55766.cdn.ngenix.net/s55766-media-origin/rline_high/index.m3u8
 #EXTINF:-1 tvg-id="RedLine.ru@SD",Красная линия
-http://s55766.cdn.ngenix.net/s55766-media-origin/rline_low/index.m3u8
+http://s55766.cdn.ngenix.net/s55766-media-origin/rline_high/index.m3u8
 #EXTINF:-1 tvg-id="UniverTV.ru@SD",КФУ ТВ (1080p) [Not 24/7]
 https://cdn.universmotri.ru/live/kfu.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="LDPRTV.ru@SD",ЛДПР ТВ (1080p)
@@ -140,7 +140,7 @@ http://stream.tvbelgorod.ru:8080/mirbelogorya/index.m3u8
 #EXTINF:-1 tvg-id="MosObrTV.ru@SD",МосОбрТВ (720p)
 http://retc.educom.ru/mosobrtv/tv1/index.m3u8
 #EXTINF:-1 tvg-id="MosObrTV.ru@SD",МосОбрТВ (720p)
-http://retj.educom.ru/mosobrtv/tv1/index.m3u8
+http://retc.educom.ru/mosobrtv/tv1/index.m3u8
 #EXTINF:-1 tvg-id="MoyaPlaneta.ru@SD",Моя Планета
 http://194.143.148.28:8080/MoyaPlanetaHD/index.m3u8
 #EXTINF:-1 tvg-id="MTVVolgograd.ru@SD",МТВ (Волгоград) (720p) [Not 24/7]
@@ -158,7 +158,7 @@ http://sirius.greenhosting.ru/MultimaniaRu/video.m3u8
 #EXTINF:-1 tvg-id="HopeChannelRussia.ru@SD",Надежда (720p)
 https://live-tvhope.cdnvideo.ru/tvhope-pull/tvhope_1/playlist.m3u8
 #EXTINF:-1 tvg-id="HopeChannelRussia.ru@SD",Надежда (720p)
-https://tvhope.cdnvideo.ru/tvhope-pull/tvhope_1/playlist.m3u8
+https://live-tvhope.cdnvideo.ru/tvhope-pull/tvhope_1/playlist.m3u8
 #EXTINF:-1 tvg-id="Nano.ru@HD",Нано ТВ HD
 http://s1.tv-nano.com/Nano_rec/index.m3u8
 #EXTINF:-1 tvg-id="Nauka.ru@SD",Наука

@@ -2,7 +2,7 @@
 #EXTINF:-1 tvg-id="MusicChannel.hu@SD",1Music Channel Hungary (576p)
 http://1music.hu/1music.m3u8
 #EXTINF:-1 tvg-id="MusicChannel.hu@SD",1Music Channel Hungary (576p)
-http://www.1music.hu/1music.m3u8
+http://1music.hu/1music.m3u8
 #EXTINF:-1 tvg-id="16tvBudapest.hu@SD",16tv Budapest (360p)
 https://cloudfront44.lexanetwork.com:1344/freerelay/16tv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="AlfoldTV.hu@SD",Alföld TV (1080p)
@@ -10,9 +10,9 @@ https://cloudfront41.lexanetwork.com:1344/relay01/livestream006.sdp/playlist.m3u
 #EXTINF:-1 tvg-id="ApostolTV.hu@SD",Apostol TV (576p)
 https://live.apostoltv.hu/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ATV.hu@SD",ATV (576p)
-http://146.59.85.40:89/atv/index.m3u8
+http://103.180.118.5:9981/stream/channelid/1457201262
 #EXTINF:-1 tvg-id="ATV.hu@SD",ATV (576p)
-http://194.76.186.33:8000/play/a01g/index.m3u8
+http://103.180.118.5:9981/stream/channelid/1457201262
 #EXTINF:-1 tvg-id="ATV.hu@SD",ATV (360p) [Not 24/7]
 https://stream.atv.hu/atvlive/atvstream_2_aac/playlist.m3u8
 #EXTINF:-1 tvg-id="ATV.hu@SD",ATV (160p)
@@ -20,7 +20,7 @@ https://streamservers.atv.hu/atvlive/atvstream_1_aac/playlist.m3u8
 #EXTINF:-1 tvg-id="ATVSpirit.hu@SD",ATV Spirit (576p)
 http://146.59.85.40:89/atvspirit/index.m3u8
 #EXTINF:-1 tvg-id="ATVSpirit.hu@SD",ATV Spirit (576p)
-http://194.76.186.33:8000/play/a02e/index.m3u8
+http://146.59.85.40:89/atvspirit/index.m3u8
 #EXTINF:-1 tvg-id="ATVSpirit.hu@SD",ATV Spirit (360p)
 https://streamservers.atv.hu/atvliveedge/_definst_/atvstream_2_aac/playlist.m3u8
 #EXTINF:-1 tvg-id="BTV.hu@SD",Bábolnai TV (360p)
@@ -46,13 +46,13 @@ http://194.76.186.33:8000/play/a04i/index.m3u8
 #EXTINF:-1 tvg-id="CsurgoTV.hu@SD",Csurgó TV (720p)
 http://79.120.178.90:1935/csurgotv/csurgolive/playlist.m3u8
 #EXTINF:-1 tvg-id="CsurgoTV.hu@SD",Csurgó TV (720p)
-https://5cd03f21c7193.streamlock.net/csurgotv/csurgolive/playlist.m3u8
+http://79.120.178.90:1935/csurgotv/csurgolive/playlist.m3u8
 #EXTINF:-1 tvg-id="DaruTV.hu@SD",Daru TV (720p)
 https://5cd03f21c7193.streamlock.net/darutv/darutvlive/playlist.m3u8
 #EXTINF:-1 tvg-id="DikhTV.hu@SD",Dikh TV (576p)
 http://194.76.186.33:8000/play/a04h/index.m3u8
 #EXTINF:-1 tvg-id="DikhTV.hu@SD",Dikh TV (576p)
-http://195.189.60.31:8003/play/a0gq/index.m3u8
+http://194.76.186.33:8000/play/a04h/index.m3u8
 #EXTINF:-1 tvg-id="DSTV.hu@SD",DSTV (720p)
 http://79.120.178.90:1935/dstv/dstvlive/playlist.m3u8
 #EXTINF:-1 tvg-id="DTV.hu@SD",DTV (720p) [Not 24/7]
@@ -60,7 +60,7 @@ http://cloudfront44.lexanetwork.com:1732/hlsrelay003/hls/livestream.sdp.m3u8
 #EXTINF:-1 tvg-id="Duna.hu@SD",Duna (720p)
 https://viamotionhsi.netplus.ch/live/eds/duna/browser-dash/duna.mpd
 #EXTINF:-1 tvg-id="Duna.hu@SD",Duna (720p)
-https://viamotionhsi.netplus.ch/live/eds/duna/browser-HLS8/duna.m3u8
+https://viamotionhsi.netplus.ch/live/eds/duna/browser-dash/duna.mpd
 #EXTINF:-1 tvg-id="Duna.hu@SD",Duna TV (1080p)
 http://146.59.85.40:89/dunahd/index.m3u8
 #EXTINF:-1 tvg-id="Duna.hu@SD",Duna TV (1080p)
@@ -70,7 +70,7 @@ http://194.76.186.33:8000/play/a01u/index.m3u8
 #EXTINF:-1 tvg-id="DunaWorld.hu@SD",Duna World (576p)
 http://146.59.85.40:89/dunaworld/index.m3u8
 #EXTINF:-1 tvg-id="DunaWorld.hu@SD",Duna World (576p)
-http://194.76.186.33:8000/play/a01i/index.m3u8
+http://146.59.85.40:89/dunaworld/index.m3u8
 #EXTINF:-1 tvg-id="EgykerTV.hu@SD",Elsö Kerület TV (1080p)
 https://iptv01.eurocable.co.hu/EC-EGYKERTVHD/index.m3u8
 #EXTINF:-1 tvg-id="ESTV.hu@SD",ESTV (420p)
@@ -104,13 +104,13 @@ https://cloudfront44.lexanetwork.com:1344/relay03/livestream003.sdp/playlist.m3u
 #EXTINF:-1 tvg-id="IzauraTV.hu@SD",Izaura TV (576p)
 http://146.59.85.40:89/izaura/index.m3u8
 #EXTINF:-1 tvg-id="IzauraTV.hu@SD",Izaura TV (576p)
-http://194.76.186.33:8000/play/a05j/index.m3u8
+http://146.59.85.40:89/izaura/index.m3u8
 #EXTINF:-1 tvg-id="JaszsagiTersegiTV.hu@SD",Jászsági Térségi TV (440p)
 https://cloudfront44.lexanetwork.com:1344/relay01/broadcast007.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="JockyTV.hu@SD",Jocky TV (576p)
 http://146.59.85.40:89/jocky/index.m3u8
 #EXTINF:-1 tvg-id="JockyTV.hu@SD",Jocky TV (576p)
-http://194.76.186.33:8000/play/a012/index.m3u8
+http://146.59.85.40:89/jocky/index.m3u8
 #EXTINF:-1 tvg-id="KanizsaTV.hu@SD",Kanizsa TV (400p)
 https://cloudfront44.lexanetwork.com:1344/freerelay/kanizsavtv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="KaposTV.hu@SD",Kapos TV (1080p)
@@ -120,7 +120,7 @@ https://cloudfront41.lexanetwork.com:1344/relay03/livestream003.sdp/playlist.m3u
 #EXTINF:-1 tvg-id="KecskemetiTV.hu@SD",Kecskemeti TV (416p) [Not 24/7]
 http://rtmp1.40e.hu:8000/live/ktv.m3u8
 #EXTINF:-1 tvg-id="KecskemetiTV.hu@SD",Kecskemeti TV (416p) [Not 24/7]
-https://eurobioinvest.hu:444/live/ktv.m3u8
+http://rtmp1.40e.hu:8000/live/ktv.m3u8
 #EXTINF:-1 tvg-id="KiskorosTV.hu@SD",Kiskőrös TV (720p)
 https://5cd03f21c7193.streamlock.net/kiskorostv/korostvlive/playlist.m3u8
 #EXTINF:-1 tvg-id="KomaromiTelevizio.hu@SD",Komáromi Televízió (400p)
@@ -144,9 +144,9 @@ http://195.189.60.31:8003/play/a09o/index.m3u8
 #EXTINF:-1 tvg-id="M2.hu@SD",M2 (1080p)
 http://146.59.85.40:89/m2hd/index.m3u8
 #EXTINF:-1 tvg-id="M2.hu@SD",M2 (1080p)
-http://194.76.186.33:8000/play/a03z/index.m3u8
+http://146.59.85.40:89/m2hd/index.m3u8
 #EXTINF:-1 tvg-id="M2.hu@SD",M2 (1080p)
-http://195.189.60.31:8003/play/a0f1/index.m3u8
+http://146.59.85.40:89/m2hd/index.m3u8
 #EXTINF:-1 tvg-id="M2.hu@SD",M2 (576p)
 http://146.59.85.40:89/m2/index.m3u8
 #EXTINF:-1 tvg-id="M2.hu@SD",M2 (576p)
@@ -154,7 +154,7 @@ http://194.76.186.33:8000/play/a00x/index.m3u8
 #EXTINF:-1 tvg-id="M5.hu@SD",M5 (1080p)
 http://146.59.85.40:89/m5/index.m3u8
 #EXTINF:-1 tvg-id="M5.hu@SD",M5 (1080p)
-http://194.76.186.33:8000/play/a045/index.m3u8
+http://146.59.85.40:89/m5/index.m3u8
 #EXTINF:-1 tvg-id="M5.hu@SD",M5 (576p)
 http://194.76.186.33:8000/play/a030/index.m3u8
 #EXTINF:-1 tvg-id="MakoiVarosiTelevizio.hu@SD",Makói Városi (576p)
@@ -178,11 +178,11 @@ https://cloudfront44.lexanetwork.com:1344/relay01/broadcast002.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="OrszaggyulesOGYplenaris.hu@SD",Országgyűlés (Plenáris) (720p) [Not 24/7]
 http://plenaris.parlament.hu:1935/edgelive/smil:mkogyplen.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OrszaggyulesOGYplenaris.hu@SD",Országgyűlés (Plenáris) (720p) [Not 24/7]
-https://plenaris.parlament.hu:446/edgelive/smil:mkogyplen.smil/playlist.m3u8
+http://plenaris.parlament.hu:1935/edgelive/smil:mkogyplen.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OrszaggyulesOGYTAB.hu@SD",Országgyűlés (Törvényalkotási bizottság) (720p) [Not 24/7]
 http://tab.parlament.hu:1935/edgelive/smil:mkogytab.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OrszaggyulesOGYTAB.hu@SD",Országgyűlés (Törvényalkotási bizottság) (720p) [Not 24/7]
-https://tab.parlament.hu:446/edgelive/smil:mkogytab.smil/playlist.m3u8
+http://tab.parlament.hu:1935/edgelive/smil:mkogytab.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="",Oxygen Music (1080p)
 https://oxygenmusic.hu:2443/hls/oxygenmusic.m3u8
 #EXTINF:-1 tvg-id="OzdiVarosiTV.hu@SD",Ózdi Városi TV (720p) [Not 24/7]
@@ -200,7 +200,7 @@ https://stream.streaming4u.hu/RegioPluszTV/index.m3u8
 #EXTINF:-1 tvg-id="RTLGold.hu@SD",RTL Gold (576p)
 http://194.76.186.33:8000/play/a05h/index.m3u8
 #EXTINF:-1 tvg-id="RTLGold.hu@SD",RTL Gold (576p)
-http://195.189.60.31:8003/play/a0dy/index.m3u8
+http://194.76.186.33:8000/play/a05h/index.m3u8
 #EXTINF:-1 tvg-id="RTLHarom.hu@SD",RTL Harom (1080p)
 http://194.76.186.33:8000/play/a02a/index.m3u8
 #EXTINF:-1 tvg-id="RTLHarom.hu@SD",RTL Harom (576p)
@@ -234,7 +234,7 @@ http://194.76.186.33:8000/play/a031/index.m3u8
 #EXTINF:-1 tvg-id="TV2Kids.hu@SD",TV2 Kids (576p)
 http://146.59.85.40:89/tv2kids/index.m3u8
 #EXTINF:-1 tvg-id="TV2Kids.hu@SD",TV2 Kids (576p)
-http://194.76.186.33:8000/play/a033/index.m3u8
+http://146.59.85.40:89/tv2kids/index.m3u8
 #EXTINF:-1 tvg-id="TV2Sef.hu@SD",TV2 Séf (576p)
 http://194.76.186.33:8000/play/a02s/index.m3u8
 #EXTINF:-1 tvg-id="TV4.hu@SD",TV4 (576p)
