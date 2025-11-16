@@ -29,7 +29,7 @@ export class CountriesGenerator implements Generator {
       .sortBy((stream: Stream) => stream.title)
       .filter((stream: Stream) => stream.isSFW())
 
-    const streamsGroupedByCountryCode = {}
+    const streamsGroupedByCountryCode: { [key: string]: Collection<Stream> } = {}
     streams.forEach((stream: Stream) => {
       stream.getBroadcastCountries().forEach((country: sdk.Models.Country) => {
         if (streamsGroupedByCountryCode[country.code]) {

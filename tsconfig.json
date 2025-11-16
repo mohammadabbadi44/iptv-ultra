@@ -2,8 +2,8 @@
   "compilerOptions": {
     "strict": true,
     "target": "es2017",
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
     "typeRoots": [
       "./scripts/types",
       "./node_modules/@types"

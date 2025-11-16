@@ -41,7 +41,7 @@ async function getFetch() {
     if (typeof fetch !== 'undefined')
         return fetch;
     // @ts-ignore
-    return (await Promise.resolve().then(() => __importStar(require('node-fetch')))).default;
+    return (await import('node-fetch')).default;
 }
 const path = __importStar(require("path"));
 const glob_1 = require("glob");
@@ -54,14 +54,14 @@ const INPUTS_EXTRA = [
     'streams/tmdb-movies.m3u',
     'streams/tmdb-series.m3u',
 ];
-const OUTPUT_PATH = path.resolve(__dirname, '../../index-unique-test-iptv-ultra.m3u');
+const OUTPUT_PATH = path.resolve(__dirname, '../../index.m3u');
 const LOGO_URL = 'https://raw.githubusercontent.com/mohammadabbadi44/iptv-ultra/master/.readme/preview.png';
 const TMDB_API_KEY = '1e8c1e0b8e7e3e5e7e8e7e8e7e8e7e8e'; // Demo key, replace with your own for production
 const TMDB_BASE = 'https://api.themoviedb.org/3/search/';
 const TMDB_IMG = 'https://image.tmdb.org/t/p/w500';
 function parseM3U(m3u, sourceFile) {
     const entries = [];
-    let current = undefined;
+    let current = {};
     // Determine default category from filename
     let defaultCategory = '';
     if (sourceFile) {
@@ -91,20 +91,26 @@ function parseM3U(m3u, sourceFile) {
             const groupTitleMatch = line.match(/group-title="([^"]*)"/);
             const logoMatch = line.match(/tvg-logo="([^"]*)"/);
             let parsedCategory = groupTitleMatch ? groupTitleMatch[1].trim() : '';
-            // If parsedCategory is empty, use defaultCategory
+            // fallback: always set to defaultCategory if empty
             if (!parsedCategory)
                 parsedCategory = defaultCategory || 'Other';
             current = {
                 name: tvgNameMatch ? tvgNameMatch[1].trim() : (nameMatch ? nameMatch[1].trim() : ''),
                 id: tvgIdMatch ? tvgIdMatch[1].trim() : '',
                 category: parsedCategory,
+                group: parsedCategory,
                 logo: logoMatch ? logoMatch[1].trim() : ''
             };
         }
         else if (current && line && !line.startsWith('#')) {
             current.url = line;
+            // fallback: إذا لم يوجد group أو category، استخدم defaultCategory
+            if (!current.group || current.group.trim() === '')
+                current.group = defaultCategory;
+            if (!current.category || current.category.trim() === '')
+                current.category = defaultCategory;
             entries.push(current);
-            current = undefined;
+            current = {};
         }
     }
     return entries;
@@ -136,28 +142,24 @@ async function getPoster(name, type) {
     return null;
 }
 async function extinf(channel) {
-    // Debug: print entry and category before processing
-    if (global.extinfDebugCount === undefined)
-        global.extinfDebugCount = 0;
-    if (global.extinfDebugCount < 10) {
-        console.log('[DEBUG ENTRY]', JSON.stringify(channel));
-        console.log('[DEBUG CATEGORY IN]', channel.category);
+    let group = channel.group || channel.category || '';
+    // fallback: استنتاج التصنيف من الاسم إذا كان فارغ
+    if (!group || group.trim() === '') {
+        if (channel.name && /movie|فيلم|film/i.test(channel.name))
+            group = 'Movies';
+        else if (channel.name && /series|مسلسل|drama/i.test(channel.name))
+            group = 'Series';
+        else
+            group = '';
     }
-    let group = channel.category && channel.category.trim() ? channel.category.trim() : '';
-    // Final fallback: always set to 'Other' if empty
-    if (!group)
+    // FINAL fallback: forcibly set to 'Other' if still empty
+    if (!group || group.trim() === '')
         group = 'Other';
     let info = `#EXTINF:-1 tvg-id="${channel.id || ''}" tvg-name="${channel.name || ''}" group-title="${group}"`;
-    // Debug: print the first 10 EXTINF lines and their group-title
-    if (global.extinfDebugCount < 10) {
-        console.log('[DEBUG EXTINF FINAL]', info);
-        global.extinfDebugCount++;
-    }
     let poster = null;
     if (channel.logo)
         poster = channel.logo;
     else {
-        // Guess type
         const type = (channel.category || '').toLowerCase().includes('series') ? 'tv' : 'movie';
         poster = await getPoster(channel.name || '', type);
     }
@@ -167,17 +169,16 @@ async function extinf(channel) {
     return info + `,${channel.name || ''}`;
 }
 function sortEntries(entries) {
-    // Movies > Series > Arabic > Foreign > HD > SD
     return entries.sort((a, b) => {
         const getScore = (e) => {
             let s = 0;
-            if (/movie/i.test(e.info))
+            if (/movie/i.test(e.category || ''))
                 s += 1000;
-            if (/series|drama/i.test(e.info))
+            if (/series|drama/i.test(e.category || ''))
                 s += 800;
-            if (/arabic|عربي/i.test(e.info))
+            if (/arabic|عربي/i.test(e.category || ''))
                 s += 100;
-            if (/foreign|turkish|hollywood/i.test(e.info))
+            if (/foreign|turkish|hollywood/i.test(e.category || ''))
                 s += 50;
             if (e.url && /1080p/i.test(e.url))
                 s += 10;

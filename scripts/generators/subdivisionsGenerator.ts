@@ -29,7 +29,7 @@ export class SubdivisionsGenerator implements Generator {
       .sortBy((stream: Stream) => stream.title)
       .filter((stream: Stream) => stream.isSFW())
 
-    const streamsGroupedBySubdivisionCode = {}
+    const streamsGroupedBySubdivisionCode: { [key: string]: Collection<Stream> } = {}
     streams.forEach((stream: Stream) => {
       stream.getBroadcastSubdivisions().forEach((subdivision: sdk.Models.Subdivision) => {
         if (streamsGroupedBySubdivisionCode[subdivision.code]) {

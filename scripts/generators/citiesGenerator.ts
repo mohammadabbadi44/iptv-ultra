@@ -29,7 +29,7 @@ export class CitiesGenerator implements Generator {
       .sortBy((stream: Stream) => stream.title)
       .filter((stream: Stream) => stream.isSFW())
 
-    const streamsGroupedByCityCode = {}
+    const streamsGroupedByCityCode: { [key: string]: Collection<Stream> } = {}
     streams.forEach((stream: Stream) => {
       stream.getBroadcastCities().forEach((city: sdk.Models.City) => {
         if (streamsGroupedByCityCode[city.code]) {

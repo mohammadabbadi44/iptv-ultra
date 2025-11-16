@@ -29,7 +29,7 @@ export class RegionsGenerator implements Generator {
       .sortBy((stream: Stream) => stream.title)
       .filter((stream: Stream) => stream.isSFW())
 
-    const streamsGroupedByRegionCode = {}
+    const streamsGroupedByRegionCode: { [key: string]: Collection<Stream> } = {}
     streams.forEach((stream: Stream) => {
       stream.getBroadcastRegions().forEach((region: sdk.Models.Region) => {
         if (streamsGroupedByRegionCode[region.code]) {

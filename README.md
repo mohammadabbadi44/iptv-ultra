@@ -65,9 +65,13 @@ IPTV-ULTRA provides high-quality, regularly updated IPTV M3U playlists for sport
 
 ## روابط IPTV الموحدة
 
-- ملف موحد لكل القنوات والأفلام والمسلسلات:
-  
-  [streams/all.m3u](https://raw.githubusercontent.com/mohammadabbadi44/iptv-ultra/master/streams/all.m3u)
+- ملف موحد لكل القنوات والأفلام والمسلسلات (index.m3u)
+
+- [index.m3u](https://raw.githubusercontent.com/mohammadabbadi44/iptv-ultra/master/index.m3u)
+
+> هذا الملف يحتوي على كل القنوات والأفلام والمسلسلات من جميع التصنيفات، ويتم تحديثه تلقائياً.
+
+---
 
 - أفلام عربي:
   
