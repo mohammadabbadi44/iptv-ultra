@@ -39968,3 +39968,55 @@ http://93.125.29.22:8787/Olala
 http://84.17.61.203:8086/udp/238.2.25.83:1234
 #EXTINF:-1 tvg-id="XpandedTV.uk" tvg-logo="https://i.imgur.com/p4RR9GM.png" group-title="XXX" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",Xpanded TV Studio Cam
 https://vod2t.xpanded.com/x3tv2/index_wlan.m3u8
+
+# --- Sport Plus Channels (Appended by request 2025-11-18) ---
+#EXTINF:-1 tvg-id="KTVSportPlus.kw@SD",KTV Sport Plus (1080p)
+https://kwtsplta.cdn.mangomolo.com/spl/smil:spl.stream.smil/chunklist.m3u8
+#EXTINF:-1 tvg-id="KTVSportPlus.kw" tvg-logo="https://i.imgur.com/l4oX0gf.png" group-title="Sports",KTV Sport Plus
+http://mc-qs.lanesh4d0w.tech/iptv-query?streaming-ip=https://www.media.gov.kw/LiveTV.aspx?PanChannel=KTVSportPlus
+#EXTINF:-1 tvg-id="ORFSportPlus.at" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/ORF_Sport%2B.svg/512px-ORF_Sport%2B.svg.png" group-title="Sports",ORF Sport+
+https://orfs.mdn.ors.at/out/u/orfs/qxb/manifest.m3u8
+#EXTINF:-1 ,X SPORT PLUS
+http://iptv.prosto.tv:7000/ch117/video.m3u8
+#EXTINF:-1 tvg-id="XSportPlus.ua@SD",XSport+
+https://uvotv-aniview.global.ssl.fastly.net/hls/live/2119693/xsportsplus/playlist.m3u8
+#EXTINF:-1,Sport Plus: Arena Sport 1 HD (SR)
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/24952
+#EXTINF:-1,Sport Plus: Arena Sport 2 HD (SR)
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/24953
+#EXTINF:-1,Sport Plus: Arena Sport 3 HD (SR)
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/24964
+#EXTINF:-1,Sport Plus: Arena Sport 4 HD (SR)
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/24954
+#EXTINF:-1,Sport Plus: Arena Sport 5 HD (SR)
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/24965
+#EXTINF:-1,Sport Plus: Sport Klub 1 HD (SR)
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/24955
+#EXTINF:-1,Sport Plus: Sport Klub 2 HD (SR)
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/24956
+#EXTINF:-1,Sport Plus: Sport Klub 3 HD (SR)
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/24957
+#EXTINF:-1,Sport Plus: Sport Klub 4 (SR)
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/24958
+#EXTINF:-1,Sport Plus: SPORT KLUB 5 HD
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/25007
+#EXTINF:-1,Sport Plus: Sport Klub 6 (SR)
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/24959
+#EXTINF:-1,Sport Plus: BT Sport 1 HD
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/27333
+#EXTINF:-1,Sport Plus: BT Sport 2 HD
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/27334
+#EXTINF:-1,Sport Plus: BT Sport 3 HD
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/27335
+#EXTINF:-1,Sport Plus: BT Sport ESPN HD
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/27323
+#EXTINF:-1,Sport Plus: BT Sport Extra 1
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/27326
+#EXTINF:-1,Sport Plus: BT Sport Extra 2
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/27327
+#EXTINF:-1,Sport Plus: BT Sport Extra 3
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/27328
+#EXTINF:-1,Sport Plus: BT Sport Extra 4
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/27329
+#EXTINF:-1,Sport Plus: BT Sport Extra 5
+http://kmx.kolpax.de:80/tommy/YPZqsm6adc/27330
