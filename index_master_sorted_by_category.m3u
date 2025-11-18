@@ -38,6 +38,17 @@ https://adultswim-vodlive.cdn.turner.com/live/rick-and-morty/stream.m3u8
 https://adultswim-vodlive.cdn.turner.com/live/robot-chicken/stream.m3u8
 #EXTINF:-1 tvg-id="AdultSwimSamuraiJack.us" tvg-logo="https://i.imgur.com/UOZ4VTH.png" group-title="Animation",Adult Swim Samurai Jack (1080p) [Geo-blocked]
 https://adultswim-vodlive.cdn.turner.com/live/samurai-jack/stream.m3u8
+
+########################################
+# Sports (Appended from sport2_fixed.m3u)
+########################################
+#EXTM3U
+# All channels grouped under "Sports"
+# (Below are all entries from sport2_fixed.m3u)
+#
+# To avoid duplicate channels, consider running a deduplication script if needed.
+
+# --- Start of sport2_fixed.m3u ---
 #EXTINF:-1 tvg-id="AdultSwimTheVentureBros.us" tvg-logo="https://i.imgur.com/ZwNmt8Y.png" group-title="Animation",Adult Swim The Venture Bros. (1080p) [Geo-blocked]
 https://adultswim-vodlive.cdn.turner.com/live/venture-bros/stream.m3u8
 #EXTINF:-1 tvg-id="CONtvAnime.us" tvg-logo="https://i.imgur.com/49LrRwJ.png" group-title="Animation",CONtv Anime (1080p)
@@ -612,6 +623,7 @@ https://sistemavrt.vrtchannel.tv.br:3473/stream/play.m3u8
 #EXTINF:-1 tvg-id="WebTVAguaBoa.br" tvg-logo="https://i.imgur.com/XrFoTDv.png" group-title="Entertainment",Web TV Água Boa (720p)
 http://painelvj.com.br/tvaguaboa2/tvaguaboa2.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="WTVBrasil.br" tvg-logo="https://i.imgur.com/4T8z1Ni.png" group-title="Entertainment",WTV Brasil (720p)
+# --- End of sport2_fixed.m3u ---
 https://stmv1.srvstm.com/wtvbrasil/wtvbrasil/playlist.m3u8
 #EXTINF:-1 tvg-id="EuroFolkTV.bg" tvg-logo="https://www.predavatel.com/bg/tv/images/eurofolk.png" group-title="Entertainment",EuroFolk TV (720p)
 https://eurofolk.cdn.netbadgers.com/bg040/bg041/bg041.m3u8
