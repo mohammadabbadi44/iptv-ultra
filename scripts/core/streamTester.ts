@@ -3,8 +3,8 @@ import { SocksProxyAgent } from 'socks-proxy-agent'
 import { ProxyParser } from './proxyParser.js'
 import mediaInfoFactory from 'mediainfo.js'
 import { OptionValues } from 'commander'
-import { TESTING } from '../constants'
-import { Stream } from '../models'
+import { TESTING } from '../constants.js'
+import { Stream } from '../models.js'
 
 export type StreamTesterResult = {
   status: {

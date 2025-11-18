@@ -1,5 +1,5 @@
 import { Collection } from '@freearhey/core'
-import { Stream } from '../models'
+import { Stream } from '../models.js'
 
 type PlaylistOptions = {
   public: boolean

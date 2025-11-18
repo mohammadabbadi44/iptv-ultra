@@ -1,10 +1,10 @@
 import { Logger, Collection, Dictionary } from '@freearhey/core'
-import { IssueLoader, PlaylistParser } from '../../core'
+import { IssueLoader, PlaylistParser } from '../../core.js'
 import { Storage } from '@freearhey/storage-js'
-import { isURI, truncate } from '../../utils'
-import { STREAMS_DIR } from '../../constants'
-import { Issue, Stream } from '../../models'
-import { data, loadData } from '../../api'
+import { isURI, truncate } from '../../utils.js'
+import { STREAMS_DIR } from '../../constants.js'
+import { Issue, Stream } from '../../models.js'
+import { data, loadData } from '../../api.js'
 
 const status = {
   PENDING: 'pending',

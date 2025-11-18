@@ -1,8 +1,8 @@
-import { CategoriesTable, CountriesTable, LanguagesTable, RegionsTable } from '../../tables'
-import { README_DIR, ROOT_DIR } from '../../constants'
+import { CategoriesTable, CountriesTable, LanguagesTable, RegionsTable } from '../../tables.js'
+import { README_DIR, ROOT_DIR } from '../../constants.js'
 import { Logger } from '@freearhey/core'
-import { Markdown } from '../../core'
-import { loadData } from '../../api'
+import { Markdown } from '../../core.js'
+import { loadData } from '../../api.js'
 
 async function main() {
   const logger = new Logger()

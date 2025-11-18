@@ -1,9 +1,9 @@
 import { restEndpointMethods } from '@octokit/plugin-rest-endpoint-methods'
 import { paginateRest } from '@octokit/plugin-paginate-rest'
-import { TESTING, OWNER, REPO } from '../constants'
+import { TESTING, OWNER, REPO } from '../constants.js'
 import { Collection } from '@freearhey/core'
 import { Octokit } from '@octokit/core'
-import { IssueParser } from './'
+import { IssueParser } from './index.js'
 
 const CustomOctokit = Octokit.plugin(paginateRest, restEndpointMethods)
 const octokit = new CustomOctokit()

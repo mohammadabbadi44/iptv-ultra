@@ -1,3 +1,3 @@
-export * from './issue'
-export * from './playlist'
-export * from './stream'
+export * from './issue.js'
+export * from './playlist.js'
+export * from './stream.js'

@@ -1,7 +1,7 @@
 import { Storage } from '@freearhey/storage-js'
 import { Collection } from '@freearhey/core'
 import parser from 'iptv-playlist-parser'
-import { Stream } from '../models'
+import { Stream } from '../models.js'
 
 type PlaylistPareserProps = {
   storage: Storage

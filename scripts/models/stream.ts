@@ -1,9 +1,9 @@
 import { Collection } from '@freearhey/core'
 import parser from 'iptv-playlist-parser'
-import { normalizeURL } from '../utils'
+import { normalizeURL } from '../utils.js'
 import * as sdk from '@iptv-org/sdk'
-import { IssueData } from '../core'
-import { data } from '../api'
+import { IssueData } from '../core.js'
+import { data } from '../api.js'
 import path from 'node:path'
 
 export class Stream extends sdk.Models.Stream {

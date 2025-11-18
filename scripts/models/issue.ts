@@ -1,4 +1,4 @@
-import { IssueData } from '../core'
+import { IssueData } from '../core.js'
 
 type IssueProps = {
   number: number

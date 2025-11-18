@@ -1,10 +1,10 @@
-import { HTMLTable, LogParser, LogItem, HTMLTableColumn, HTMLTableItem } from '../core'
+import { HTMLTable, LogParser, LogItem, HTMLTableColumn, HTMLTableItem } from '../core.js'
 import { Storage, File } from '@freearhey/storage-js'
-import { LOGS_DIR, README_DIR } from '../constants'
+import { LOGS_DIR, README_DIR } from '../constants.js'
 import { Collection } from '@freearhey/core'
 import * as sdk from '@iptv-org/sdk'
-import { Table } from './table'
-import { data } from '../api'
+import { Table } from './table.js'
+import { data } from '../api.js'
 
 export class LanguagesTable implements Table {
   async create() {

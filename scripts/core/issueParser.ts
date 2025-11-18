@@ -1,6 +1,6 @@
 import { Dictionary } from '@freearhey/core'
-import { IssueData } from './issueData'
-import { Issue } from '../models'
+import { IssueData } from './issueData.js'
+import { Issue } from '../models.js'
 
 const FIELDS = new Dictionary({
   'Stream ID': 'streamId',
