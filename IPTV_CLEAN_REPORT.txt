@@ -1,0 +1,10 @@
+/home/evil/IPTV_2026_STYLE.m3u:
+  original backup: /home/evil/IPTV_2026_STYLE.m3u.bak.20260531151803
+  clean file: /home/evil/IPTV_2026_STYLE_CLEAN.m3u
+  fixed lines: 2581
+
+/home/evil/IPTV_COMPLETE_BACKUP.m3u:
+  original backup: /home/evil/IPTV_COMPLETE_BACKUP.m3u.bak.20260531151809
+  clean file: /home/evil/IPTV_COMPLETE_BACKUP_CLEAN.m3u
+  fixed lines: 2581
+
